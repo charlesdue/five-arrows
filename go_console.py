@@ -139,6 +139,19 @@ def _slot_priority(slots, rng):
     return slots
 
 
+def _slot_has_empty(grid: Grid, slot: Slot) -> bool:
+    x, y = slot.start_x, slot.start_y
+    for _ in range(slot.length):
+        c = grid.get(x, y)
+        if c.letter is None:
+            return True
+        if slot.direction == "RIGHT":
+            x += 1
+        else:
+            y += 1
+    return False
+
+
 def _print_place(step: int, word: str, mandatory: bool, slot: Slot, added_def, log_fn) -> None:
     label = "oblig" if mandatory else "fill"
     extra = f" +DEF ({added_def[0]},{added_def[1]})" if added_def else ""
@@ -369,6 +382,80 @@ def run(
             log(f"INJECT: done added={added_defs} attempts={attempts}")
         return added_defs
 
+    def _fill_unfilled_defs(max_passes: int = 2) -> int:
+        nonlocal grid, predefs, used_slots, used_words, steps
+        placed_total = 0
+        for p in range(max_passes):
+            progress = 0
+            log(f"DEF-FILL pass={p + 1}")
+            for y in range(HEIGHT):
+                for x in range(WIDTH):
+                    c = grid.get(x, y)
+                    if c.type != "DEF":
+                        continue
+                    for d in (c.defs or []):
+                        if d.direction == "RIGHT":
+                            sx, sy, sdir = x + 1, y, "RIGHT"
+                        elif d.direction == "DOWN":
+                            sx, sy, sdir = x, y + 1, "DOWN"
+                        else:  # RIGHT_DOWN
+                            sx, sy, sdir = x, y + 1, "RIGHT"
+                        if not grid.in_bounds(sx, sy) or grid.get(sx, sy).type == "DEF":
+                            continue
+                        slot = slot_from(grid, sx, sy, sdir)
+                        if slot.length < 2:
+                            continue
+                        key = (slot.start_x, slot.start_y, slot.direction)
+                        if key in used_slots and not _slot_has_empty(grid, slot):
+                            continue
+                        log(
+                            f"DEFCHK ({x},{y}) dir={d.direction} "
+                            f"slot=({slot.start_x},{slot.start_y}){slot.direction} "
+                            f"len={slot.length} pattern={slot.pattern}"
+                        )
+                        if not _slot_has_empty(grid, slot):
+                            continue
+                        candidates = _pick_word_candidates_for_slot(
+                            slot, dict_index, used_words, rng, max_candidates=12
+                        )
+                        if not candidates:
+                            continue
+                        end_on_border = _slot_end_on_border(slot, grid)
+                        candidates.sort(
+                            key=lambda w: (
+                                -_end_letter_weight(w) if end_on_border and len(w) == slot.length else -1.0,
+                                rng.random(),
+                            )
+                        )
+                        placed = False
+                        for w in candidates:
+                            res = try_place_word_progressive(
+                                grid,
+                                slot,
+                                w,
+                                dict_index,
+                                predefs,
+                                check_perpendicular=True,
+                                relax_end_def_checks=True,
+                            )
+                            if not res:
+                                continue
+                            _placement, added_def = res
+                            used_words.add(w)
+                            used_slots.add((slot.start_x, slot.start_y, slot.direction))
+                            steps += 1
+                            _print_place(steps, w, False, slot, added_def, log)
+                            emit_grid()
+                            progress += 1
+                            placed_total += 1
+                            placed = True
+                            break
+                        if placed:
+                            continue
+            if progress == 0:
+                break
+        return placed_total
+
     emit_grid()
     log(f"RUN start seed={seed} max_mandatory={max_mandatory} max_steps={max_steps}")
     last_hb = time.time()
@@ -533,6 +620,9 @@ def run(
         def_retry = 0
         stagnation = 0
 
+    added = _fill_unfilled_defs()
+    if added > 0:
+        log(f"DEF-FILL placed={added}")
     log(f"DONE: placed={steps} unplaced={len(unplaced)}")
 
 
@@ -656,6 +746,9 @@ def run(
             log(f"HB steps={steps} queue_idx={queue_index} used_slots={len(used_slots)}")
             last_hb = time.time()
 
+    added = _fill_unfilled_defs()
+    if added > 0:
+        log(f"DEF-FILL placed={added}")
     log(f"DONE: placed={steps} unplaced={len(unplaced)}")
 
 
