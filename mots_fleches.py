@@ -1272,6 +1272,42 @@ def adjacent_pairs_ok(grid: Grid, dict_index: DictionaryIndex, changed: List[Tup
     return True
 
 
+def adjacent_letter_sequences_ok(grid: Grid, dict_index: DictionaryIndex, changed: List[Tuple[int, int]]) -> bool:
+    seen = set()
+    for x, y in changed:
+        # Horizontal run
+        sx = x
+        while sx - 1 >= 0 and grid.get(sx - 1, y).type == "LETTER":
+            sx -= 1
+        if (sx, y, "RIGHT") not in seen:
+            letters = []
+            cx = sx
+            while cx < grid.width and grid.get(cx, y).type == "LETTER":
+                letters.append(grid.get(cx, y).letter or "")
+                cx += 1
+            if len(letters) >= 2:
+                word = "".join(letters)
+                if word not in dict_index.words:
+                    return False
+            seen.add((sx, y, "RIGHT"))
+        # Vertical run
+        sy = y
+        while sy - 1 >= 0 and grid.get(x, sy - 1).type == "LETTER":
+            sy -= 1
+        if (x, sy, "DOWN") not in seen:
+            letters = []
+            cy = sy
+            while cy < grid.height and grid.get(x, cy).type == "LETTER":
+                letters.append(grid.get(x, cy).letter or "")
+                cy += 1
+            if len(letters) >= 2:
+                word = "".join(letters)
+                if word not in dict_index.words:
+                    return False
+            seen.add((x, sy, "DOWN"))
+    return True
+
+
 def perpendicular_ok(grid: Grid, dict_index: DictionaryIndex, changed: List[Tuple[int, int]], slot_dir: str) -> bool:
     perp = "DOWN" if slot_dir == "RIGHT" else "RIGHT"
     seen = set()
@@ -1298,7 +1334,6 @@ def try_place_word_progressive(
     check_perpendicular: bool = True,
     relax_end_def_checks: bool = False,
     check_patterns: bool = True,
-    min_fixed_for_pattern: int = 1,
 ) -> Optional[Tuple[WordPlacement, Optional[Tuple[int, int]]]]:
     # Check fit and conflicts
     if slot.length < len(word):
@@ -1343,6 +1378,15 @@ def try_place_word_progressive(
     changed = place_word_letters(grid, slot, word)
     coords = [(cx, cy) for cx, cy, _ in changed]
     if check_perpendicular and not perpendicular_ok(grid, dict_index, coords, slot.direction):
+        revert_letters(grid, changed)
+        if added_def:
+            ax, ay = added_def
+            predefs.discard(added_def)
+            c = grid.get(ax, ay)
+            c.type = None
+            c.defs = []
+        return None
+    if check_patterns and not adjacent_letter_sequences_ok(grid, dict_index, coords):
         revert_letters(grid, changed)
         if added_def:
             ax, ay = added_def
