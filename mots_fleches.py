@@ -1521,6 +1521,29 @@ def possible_def_dirs(grid: Grid, x: int, y: int) -> List[str]:
     return dirs
 
 
+def expand_def_directions(grid: Grid) -> int:
+    """Add missing DEF directions (RIGHT, DOWN, RIGHT_DOWN) when valid slots exist."""
+    added = 0
+    for y in range(grid.height):
+        for x in range(grid.width):
+            c = grid.get(x, y)
+            if c.type != "DEF":
+                continue
+            current = {d.direction for d in (c.defs or [])}
+            possible = possible_def_dirs(grid, x, y)
+            # allow diagonal (word to the right starting below)
+            if grid.in_bounds(x, y + 1) and grid.get(x, y + 1).type != "DEF":
+                slot = slot_from(grid, x, y + 1, "RIGHT")
+                if slot.length >= 2:
+                    possible.append("RIGHT_DOWN")
+            for d in possible:
+                if d not in current:
+                    c.defs.append(DefEntry(direction=d))
+                    current.add(d)
+                    added += 1
+    return added
+
+
 def apply_border_def_pattern(grid: Grid, seed: int = 0) -> None:
     """Apply alternating DEF pattern on row 0 and column 0 starting at (0,0)."""
     rng = random.Random(seed)
