@@ -21,6 +21,11 @@ from mots_fleches import (
     progressive_place_next,
     try_place_word_progressive,
     expand_def_directions,
+    DefEntry,
+    possible_def_dirs,
+    slot_from,
+    def_run_too_long,
+    has_singleton_segments,
 )
 
 
@@ -89,6 +94,45 @@ def _pick_word_candidates_for_slot(
     return sample
 
 
+def _empty_score(grid: Grid, x: int, y: int) -> int:
+    if not grid.in_bounds(x, y):
+        return -1
+    c = grid.get(x, y)
+    if c.type is not None or c.letter is not None:
+        return -1
+    score = 0
+    for dy in range(-2, 3):
+        for dx in range(-2, 3):
+            nx, ny = x + dx, y + dy
+            if not grid.in_bounds(nx, ny):
+                continue
+            c2 = grid.get(nx, ny)
+            if c2.type is None and c2.letter is None:
+                score += 1
+    return score
+
+
+def _slot_end_on_border(slot: Slot, grid: Grid) -> bool:
+    end_x = slot.start_x + (slot.length - 1 if slot.direction == "RIGHT" else 0)
+    end_y = slot.start_y + (slot.length - 1 if slot.direction == "DOWN" else 0)
+    return end_x == 0 or end_x == grid.width - 1 or end_y == 0 or end_y == grid.height - 1
+
+
+def _weighted_choice(candidates: list[dict], rng: random.Random) -> dict | None:
+    if not candidates:
+        return None
+    total = sum(c.get("_weight", 1.0) for c in candidates)
+    if total <= 0:
+        return rng.choice(candidates)
+    r = rng.random() * total
+    acc = 0.0
+    for c in candidates:
+        acc += c.get("_weight", 1.0)
+        if r <= acc:
+            return c
+    return candidates[-1]
+
+
 def _slot_priority(slots, rng):
     rng.shuffle(slots)
     slots.sort(key=lambda s: (s.length, 0 if s.direction == "DOWN" else 1, rng.random()))
@@ -130,6 +174,19 @@ def run(
     dictionary = load_dictionary(dict_path)
     dict_words = dictionary.union(mandatory_words)
     dict_index = build_dictionary_index(list(dict_words))
+    last_letter_freq: dict[str, int] = {}
+    for w in dict_words:
+        if not w:
+            continue
+        last_letter_freq[w[-1]] = last_letter_freq.get(w[-1], 0) + 1
+    max_last_freq = max(last_letter_freq.values()) if last_letter_freq else 0
+
+    def _end_letter_weight(word: str) -> float:
+        if not word or max_last_freq <= 0:
+            return 1.0
+        freq = last_letter_freq.get(word[-1], 0)
+        # Scale to [0.25, 1.25]
+        return 0.25 + (freq / max_last_freq)
 
     base_grid = Grid(WIDTH, HEIGHT)
     apply_border_def_pattern(base_grid, seed=seed)
@@ -180,6 +237,138 @@ def run(
             grid_cb(grid)
         write_state()
 
+    def _try_add_def_at(x: int, y: int, check_perp: bool) -> tuple[Grid, set, set, set, list] | None:
+        if not grid.in_bounds(x, y):
+            return None
+        c0 = grid.get(x, y)
+        if c0.type is not None or c0.letter is not None:
+            return None
+        possible = possible_def_dirs(grid, x, y)
+        # Allow RIGHT_DOWN (word to the right starting below)
+        if grid.in_bounds(x, y + 1) and grid.get(x, y + 1).type != "DEF":
+            slot_rd = slot_from(grid, x, y + 1, "RIGHT")
+            if slot_rd.length >= 2 and "RIGHT_DOWN" not in possible:
+                possible.append("RIGHT_DOWN")
+        if not possible:
+            return None
+        dir_sets: list[list[str]] = []
+        if "RIGHT" in possible and "DOWN" in possible:
+            dir_sets.append(["RIGHT", "DOWN"])
+        if "RIGHT" in possible and "RIGHT_DOWN" in possible:
+            dir_sets.append(["RIGHT", "RIGHT_DOWN"])
+        if "DOWN" in possible and "RIGHT_DOWN" in possible:
+            dir_sets.append(["DOWN", "RIGHT_DOWN"])
+        if "RIGHT" in possible:
+            dir_sets.append(["RIGHT"])
+        if "DOWN" in possible:
+            dir_sets.append(["DOWN"])
+        if "RIGHT_DOWN" in possible:
+            dir_sets.append(["RIGHT_DOWN"])
+        rng.shuffle(dir_sets)
+        for dirs in dir_sets:
+            trial = copy.deepcopy(grid)
+            t_predefs = set(predefs)
+            t_used_slots = set(used_slots)
+            t_used_words = set(used_words)
+            cell = trial.get(x, y)
+            cell.type = "DEF"
+            cell.letter = None
+            cell.defs = [DefEntry(direction=d) for d in dirs]
+            if def_run_too_long(trial, set()) or has_singleton_segments(trial):
+                continue
+            t_predefs.add((x, y))
+            placements = []
+            ok = True
+            for d in dirs:
+                if d == "RIGHT":
+                    sx, sy, sdir = x + 1, y, "RIGHT"
+                elif d == "DOWN":
+                    sx, sy, sdir = x, y + 1, "DOWN"
+                else:  # RIGHT_DOWN
+                    sx, sy, sdir = x, y + 1, "RIGHT"
+                if not trial.in_bounds(sx, sy) or trial.get(sx, sy).type == "DEF":
+                    ok = False
+                    break
+                slot = slot_from(trial, sx, sy, sdir)
+                if slot.length < 2:
+                    ok = False
+                    break
+                candidates = _pick_word_candidates_for_slot(
+                    slot, dict_index, t_used_words, rng, max_candidates=12
+                )
+                if candidates:
+                    end_on_border = _slot_end_on_border(slot, trial)
+                    candidates.sort(
+                        key=lambda w: (
+                            -_end_letter_weight(w) if end_on_border and len(w) == slot.length else -1.0,
+                            rng.random(),
+                        )
+                    )
+                placed = False
+                for w in candidates:
+                    res = try_place_word_progressive(
+                        trial,
+                        slot,
+                        w,
+                        dict_index,
+                        t_predefs,
+                        check_perpendicular=check_perp,
+                        relax_end_def_checks=True,
+                    )
+                    if res:
+                        _placement, added_def = res
+                        t_used_words.add(w)
+                        t_used_slots.add((slot.start_x, slot.start_y, slot.direction))
+                        placements.append((w, slot, added_def))
+                        placed = True
+                        break
+                if not placed:
+                    ok = False
+                    break
+            if not ok:
+                continue
+            if def_run_too_long(trial, set()) or has_singleton_segments(trial):
+                continue
+            return trial, t_predefs, t_used_slots, t_used_words, placements
+        return None
+
+    def _inject_defs_with_words(check_perp: bool) -> int:
+        nonlocal grid, predefs, used_slots, used_words, steps
+        target = rng.randint(2, 7)
+        log(f"INJECT: target={target} (check_perp={check_perp})")
+        candidates = []
+        for yy in range(HEIGHT):
+            for xx in range(WIDTH):
+                score = _empty_score(grid, xx, yy)
+                if score >= 0:
+                    candidates.append((score, rng.random(), xx, yy))
+        candidates.sort(key=lambda t: (-t[0], t[1]))
+        added_defs = 0
+        attempts = 0
+        for _score, _r, xx, yy in candidates:
+            if added_defs >= target:
+                break
+            attempts += 1
+            res = _try_add_def_at(xx, yy, check_perp)
+            if not res:
+                continue
+            grid, predefs, used_slots, used_words, placements = res
+            dirs = ",".join([d.direction for d in grid.get(xx, yy).defs])
+            detail = []
+            for w, slot, added_def in placements:
+                detail.append(f"{w}@({slot.start_x},{slot.start_y}){slot.direction}")
+            log(f"INJECT OK ({xx},{yy}) dirs={dirs} words={'; '.join(detail)}")
+            for w, slot, added_def in placements:
+                steps += 1
+                _print_place(steps, w, False, slot, added_def, log)
+            emit_grid()
+            added_defs += 1
+        if added_defs == 0:
+            log(f"INJECT: no placement found after {attempts} attempts")
+        else:
+            log(f"INJECT: done added={added_defs} attempts={attempts}")
+        return added_defs
+
     emit_grid()
     log(f"RUN start seed={seed} max_mandatory={max_mandatory} max_steps={max_steps}")
     last_hb = time.time()
@@ -228,6 +417,7 @@ def run(
                     key = (slot.start_x, slot.start_y, slot.direction)
                     if key in used_slots:
                         continue
+                    end_on_border = _slot_end_on_border(slot, grid)
                     candidates = _pick_word_candidates_for_slot(slot, dict_index, used_words, rng, max_candidates=6)
                     if not candidates:
                         continue
@@ -246,6 +436,9 @@ def run(
                         if not res:
                             continue
                         _placement, added_def = res
+                        weight = 1.0
+                        if end_on_border and len(w) == slot.length:
+                            weight *= _end_letter_weight(w)
                         found.append(
                             {
                                 "word": w,
@@ -254,6 +447,7 @@ def run(
                                 "mandatory": False,
                                 "queue_index": None,
                                 "check_perp": check_perp,
+                                "_weight": weight,
                             }
                         )
                         if len(found) >= 12:
@@ -261,7 +455,7 @@ def run(
                     if len(found) >= 12:
                         break
                 if found:
-                    return rng.choice(found)
+                    return _weighted_choice(found, rng)
                 return None
 
             candidate = _try_fill(check_perp=True)
@@ -275,8 +469,16 @@ def run(
                 candidate = _try_fill(check_perp=True) or _try_fill(check_perp=False)
 
             if candidate is None:
+                added = _inject_defs_with_words(check_perp=False)
+                if added > 0:
+                    def_retry = 0
+                    continue
                 # Fallback: add more DEF cells once
                 if def_retry >= 1:
+                    added = _inject_defs_with_words(check_perp=True)
+                    if added > 0:
+                        def_retry = 0
+                        continue
                     log("STOP: aucun mot placable.")
                     break
 
@@ -295,6 +497,10 @@ def run(
                     def_retry += 1
                     continue
 
+                added = _inject_defs_with_words(check_perp=True)
+                if added > 0:
+                    def_retry = 0
+                    continue
                 log("STOP: aucun mot placable.")
                 break
 
@@ -384,8 +590,16 @@ def run(
                 candidate = _try_fill(check_perp=True) or _try_fill(check_perp=False)
 
             if candidate is None:
+                added = _inject_defs_with_words(check_perp=False)
+                if added > 0:
+                    def_retry = 0
+                    continue
                 # Fallback: add more DEF cells once
                 if def_retry >= 1:
+                    added = _inject_defs_with_words(check_perp=True)
+                    if added > 0:
+                        def_retry = 0
+                        continue
                     log("STOP: aucun mot placable.")
                     break
 
@@ -402,6 +616,10 @@ def run(
                 )
                 if after > before:
                     def_retry += 1
+                    continue
+                added = _inject_defs_with_words(check_perp=True)
+                if added > 0:
+                    def_retry = 0
                     continue
                 log("STOP: aucun mot placable.")
                 break
