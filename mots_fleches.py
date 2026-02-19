@@ -1319,7 +1319,11 @@ def perpendicular_ok(grid: Grid, dict_index: DictionaryIndex, changed: List[Tupl
         seen.add(key)
         if len(pattern) < 2:
             return False
-        if "." not in pattern:
+        if "." in pattern:
+            # Full segment (to DEF/border) must allow at least one word
+            if not dict_index.matches_pattern(pattern):
+                return False
+        else:
             if pattern not in dict_index.words:
                 return False
     return True

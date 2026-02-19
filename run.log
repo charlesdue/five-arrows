@@ -1,58 +1,51 @@
-RUN start seed=1949837216 max_mandatory=5 max_steps=500
-[001] oblig SOPORIFIQUE RIGHT @ (1,14) len=12 pattern=............ +DEF (12,14)
-[002] oblig LUGUBRE RIGHT @ (1,12) len=12 pattern=............ +DEF (8,12)
-[003] oblig OURLE DOWN @ (8,1) len=11 pattern=........... +DEF (8,6)
-[004] oblig IRE RIGHT @ (9,6) len=4 pattern=.... +DEF (12,6)
-[005] oblig VERSATILE RIGHT @ (1,8) len=12 pattern=............ +DEF (10,8)
-[006] fill TA RIGHT @ (11,8) len=2 pattern=..
-[007] fill LIMA RIGHT @ (9,12) len=4 pattern=....
-[008] fill HECTOR DOWN @ (12,15) len=6 pattern=......
-[009] fill LATTE DOWN @ (12,1) len=5 pattern=.....
-[010] fill CONFORT DOWN @ (10,1) len=7 pattern=.....R.
-[011] fill TRIMER RIGHT @ (1,4) len=12 pattern=.......L.F.T +DEF (7,4)
-[012] fill POCHES RIGHT @ (1,6) len=7 pattern=....... +DEF (7,6)
-[013] fill ZIMBABWE RIGHT @ (1,18) len=12 pattern=...........T +DEF (9,18)
-[014] fill DUT RIGHT @ (10,18) len=3 pattern=..T
-[015] fill MAREE RIGHT @ (1,20) len=12 pattern=...........R +DEF (6,20)
-[016] fill DELATEUR RIGHT @ (1,16) len=12 pattern=...........E +DEF (9,16)
-[017] fill LUMINEUX RIGHT @ (1,10) len=12 pattern=............ +DEF (9,10)
-[018] fill DUE RIGHT @ (10,10) len=3 pattern=...
-[019] fill UNE RIGHT @ (10,16) len=3 pattern=..E
-[020] fill EXCLUT RIGHT @ (1,2) len=12 pattern=.......U.O.A +DEF (7,2)
-[021] fill STORES DOWN @ (6,1) len=19 pattern=.T.R.S.T.E.R.I.E.B. +DEF (6,7)
-[022] fill SITUEE DOWN @ (7,7) len=14 pattern=.I.U.E.F.U.W.. +DEF (7,13)
-[023] fill LABEUR RIGHT @ (7,20) len=6 pattern=.....R
-[024] fill LAVE DOWN @ (12,7) len=7 pattern=.A.E.A. +DEF (12,11)
-[025] fill AH DOWN @ (12,12) len=2 pattern=A.
-[026] fill SA RIGHT @ (7,7) len=6 pattern=S..T.L +DEF (9,7)
-[027] fill FOU DOWN @ (5,0) len=21 pattern=..U.E.E.A.N.B.R.T.A.E +DEF (5,3)
-[028] fill OUEST DOWN @ (1,0) len=21 pattern=..E.T.P.V.L.L.S.D.Z.M +DEF (1,5)
-[029] fill AL DOWN @ (7,0) len=2 pattern=..
-[030] fill TEE DOWN @ (6,8) len=12 pattern=T.E.R.I.E.B. +DEF (6,11)
-[031] fill EU DOWN @ (9,8) len=2 pattern=E.
-[032] fill FEU DOWN @ (7,14) len=7 pattern=F.U.W.L +DEF (7,17)
-[033] fill ERE DOWN @ (5,4) len=17 pattern=E.E.A.N.B.R.T.A.E +DEF (5,7)
-[034] fill IL DOWN @ (9,11) len=5 pattern=.L.Q. +DEF (9,13)
-[035] fill ABC DOWN @ (3,0) len=21 pattern=..C.I.C.R.M.G.P.L.M.R +DEF (3,3)
-[036] fill OS RIGHT @ (0,3) len=3 pattern=.S. +DEF (2,3)
-[037] fill RIO DOWN @ (2,4) len=17 pattern=R.O.E.U.U.O.E.I.A +DEF (2,7)
-[038] fill TU RIGHT @ (0,1) len=13 pattern=.U.B.OSLO.C.L +DEF (2,1)
-[039] fill CI DOWN @ (8,13) len=8 pattern=.I.R.E.A +DEF (8,15)
-[040] fill SAM RIGHT @ (0,9) len=13 pattern=......ET.U..V +DEF (3,9)
-[041] fill RAI DOWN @ (6,12) len=8 pattern=R.I.E.B. +DEF (6,15)
-[042] fill RUE DOWN @ (8,16) len=5 pattern=R.E.A +DEF (8,19)
-[043] fill EMU DOWN @ (2,8) len=13 pattern=EMU.U.O.E.I.A +DEF (2,11)
-[044] fill NE RIGHT @ (0,13) len=7 pattern=......A +DEF (2,13)
-[045] fill OSE DOWN @ (2,14) len=7 pattern=O.E.I.A +DEF (2,17)
-[046] fill US RIGHT @ (8,17) len=5 pattern=U...C +DEF (10,17)
-[047] fill IRA DOWN @ (2,18) len=3 pattern=I.A
+RUN start seed=1950825997 max_mandatory=5 max_steps=500
+[001] oblig SOPORIFIQUE DOWN @ (2,1) len=20 pattern=.................... +DEF (2,12)
+[002] oblig IRE DOWN @ (6,1) len=20 pattern=.................... +DEF (6,4)
+[003] fill LEURS RIGHT @ (7,4) len=6 pattern=...... +DEF (12,4)
+[004] fill NOTER RIGHT @ (1,4) len=5 pattern=.O...
+[005] fill SES DOWN @ (12,1) len=3 pattern=...
+[006] fill TURCTURCS RIGHT @ (1,10) len=12 pattern=.U.......... +DEF (10,10)
+[007] fill BP RIGHT @ (11,10) len=2 pattern=..
+[008] fill EMERGENCE DOWN @ (10,1) len=9 pattern=...R.....
+[009] fill ALBANIE RIGHT @ (3,12) len=10 pattern=.......... +DEF (10,12)
+[010] fill IL RIGHT @ (11,12) len=2 pattern=..
+[011] fill VIREMENT RIGHT @ (1,8) len=12 pattern=.I.......C.. +DEF (9,8)
+[012] fill CUL RIGHT @ (10,8) len=3 pattern=C..
+[013] fill MOLIERE RIGHT @ (1,2) len=12 pattern=.O...R...M.E +DEF (8,2)
+[014] fill CONTENUE RIGHT @ (1,18) len=12 pattern=............ +DEF (9,18)
+[015] fill FONCTIONS RIGHT @ (1,20) len=12 pattern=............ +DEF (10,20)
+[016] fill NI RIGHT @ (11,20) len=2 pattern=..
+[017] fill JEU RIGHT @ (10,18) len=3 pattern=...
+[018] fill SEULE RIGHT @ (1,14) len=12 pattern=............ +DEF (6,14)
+[019] fill ALLEES RIGHT @ (7,14) len=6 pattern=......
+[020] fill PLATRE RIGHT @ (1,16) len=12 pattern=............ +DEF (7,16)
+[021] fill LAIC RIGHT @ (8,16) len=5 pattern=..... +DEF (12,16)
+[022] fill VIPERE DOWN @ (4,1) len=20 pattern=.I.E...E.C.L.L.T.T.C +DEF (4,7)
+[023] fill AIMER RIGHT @ (1,6) len=12 pattern=.I.E.....E.. +DEF (6,6)
+[024] fill CHIER RIGHT @ (7,6) len=6 pattern=...E.. +DEF (12,6)
+[025] fill IMRE RIGHT @ (9,2) len=4 pattern=.M.E
+[026] fill AL DOWN @ (12,7) len=9 pattern=.L.P.L.S. +DEF (12,9)
+[027] fill GUE RIGHT @ (0,11) len=13 pattern=..E.......... +DEF (3,11)
+[028] fill PAL DOWN @ (12,10) len=6 pattern=P.L.S. +DEF (12,13)
+[029] fill SI DOWN @ (12,14) len=2 pattern=S.
+[030] fill POP RIGHT @ (0,3) len=13 pattern=..P.P.E...E.S +DEF (3,3)
+[031] fill CRI DOWN @ (9,0) len=8 pattern=..I.U.I. +DEF (9,3)
+[032] fill DO RIGHT @ (0,13) len=12 pattern=............ +DEF (2,13)
+[033] fill ALU DOWN @ (3,12) len=9 pattern=A.U.A.N.N +DEF (3,15)
+[034] fill AS DOWN @ (9,19) len=2 pattern=.S
+[035] fill TU DOWN @ (7,17) len=4 pattern=.U.O +DEF (7,19)
+[036] fill DECU DOWN @ (6,7) len=7 pattern=.E.U.A. +DEF (6,11)
+[037] fill DE DOWN @ (10,13) len=7 pattern=.E.I.J. +DEF (10,15)
+[038] fill TE DOWN @ (6,15) len=6 pattern=.E.N.I +DEF (6,17)
+[039] fill AIN DOWN @ (3,16) len=5 pattern=A.N.N +DEF (3,19)
+[040] fill AI DOWN @ (6,12) len=2 pattern=A.
+[041] fill JE DOWN @ (8,3) len=18 pattern=.E.H.T.C.I.L.L.E.N +DEF (8,5)
+[042] fill MUNI DOWN @ (12,17) len=4 pattern=.U.I
+[043] fill HIT DOWN @ (8,6) len=15 pattern=H.T.C.I.L.L.E.N +DEF (8,9)
 STOP: aucun mot placable.
-DONE: placed=47 unplaced=0
-[001] oblig SOPORIFIQUE RIGHT @ (1,14) len=11 pattern=SOPORIFIQUE
+DONE: placed=43 unplaced=3
+[001] oblig SOPORIFIQUE DOWN @ (2,1) len=11 pattern=SOPORIFIQUE
 HB steps=1 queue_idx=1 used_slots=1
-[002] oblig LUGUBRE RIGHT @ (1,12) len=7 pattern=LUGUBRE
-[003] oblig OURLE DOWN @ (8,1) len=5 pattern=OURLE
-[004] oblig IRE RIGHT @ (9,6) len=3 pattern=IRE
-[005] oblig VERSATILE RIGHT @ (1,8) len=9 pattern=VERSATILE
+[002] oblig IRE DOWN @ (6,1) len=3 pattern=IRE
 STOP: aucun mot placable.
-DONE: placed=5 unplaced=0
+DONE: placed=2 unplaced=3
