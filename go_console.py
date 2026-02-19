@@ -56,6 +56,39 @@ def _pick_word_for_slot(slot: Slot, dict_index, used_words: set, rng) -> str | N
     return pick
 
 
+def _pick_word_candidates_for_slot(
+    slot: Slot,
+    dict_index,
+    used_words: set,
+    rng,
+    max_candidates: int = 6,
+) -> list[str]:
+    max_len = slot.length
+    lengths = list(range(2, max_len + 1))
+    rng.shuffle(lengths)
+    sample: list[str] = []
+    seen = 0
+    for L in lengths:
+        words = dict_index.by_length.get(L, [])
+        if not words:
+            continue
+        start = rng.randrange(len(words))
+        for k in range(len(words)):
+            w = words[(start + k) % len(words)]
+            if w in used_words:
+                continue
+            if _pattern_prefix_matches(w, slot.pattern):
+                seen += 1
+                if len(sample) < max_candidates:
+                    sample.append(w)
+                else:
+                    j = rng.randrange(seen)
+                    if j < max_candidates:
+                        sample[j] = w
+    rng.shuffle(sample)
+    return sample
+
+
 def _slot_priority(slots, rng):
     rng.shuffle(slots)
     slots.sort(key=lambda s: (s.length, 0 if s.direction == "DOWN" else 1, rng.random()))
@@ -113,6 +146,7 @@ def run(
     predefs = {(x, y) for y in range(HEIGHT) for x in range(WIDTH) if grid.get(x, y).type == "DEF"}
     slot_lengths = predef_slot_lengths(grid, predefs)
     queue = select_words_for_slots(mandatory_words, slot_lengths, max_mandatory, seed=seed)
+    random.Random(seed ^ 0xA5A5A5A5).shuffle(queue)
 
     queue_index = 0
     used_slots: set[tuple[int, int, str]] = set()
@@ -189,35 +223,45 @@ def run(
         if candidate is None:
             def _try_fill(check_perp: bool):
                 slots = _slot_priority(list_slots(grid), rng)
+                found: list[dict] = []
                 for slot in slots:
                     key = (slot.start_x, slot.start_y, slot.direction)
                     if key in used_slots:
                         continue
-                    w = _pick_word_for_slot(slot, dict_index, used_words, rng)
-                    if not w:
+                    candidates = _pick_word_candidates_for_slot(slot, dict_index, used_words, rng, max_candidates=6)
+                    if not candidates:
                         continue
-                    grid_copy = copy.deepcopy(grid)
-                    predefs_copy = set(predefs)
-                    res = try_place_word_progressive(
-                        grid_copy,
-                        slot,
-                        w,
-                        dict_index,
-                        predefs_copy,
-                        check_perpendicular=check_perp,
-                        relax_end_def_checks=True,
-                    )
-                    if not res:
-                        continue
-                    _placement, added_def = res
-                    return {
-                        "word": w,
-                        "slot": slot,
-                        "added_def": added_def,
-                        "mandatory": False,
-                        "queue_index": None,
-                        "check_perp": check_perp,
-                    }
+                    for w in candidates:
+                        grid_copy = copy.deepcopy(grid)
+                        predefs_copy = set(predefs)
+                        res = try_place_word_progressive(
+                            grid_copy,
+                            slot,
+                            w,
+                            dict_index,
+                            predefs_copy,
+                            check_perpendicular=check_perp,
+                            relax_end_def_checks=True,
+                        )
+                        if not res:
+                            continue
+                        _placement, added_def = res
+                        found.append(
+                            {
+                                "word": w,
+                                "slot": slot,
+                                "added_def": added_def,
+                                "mandatory": False,
+                                "queue_index": None,
+                                "check_perp": check_perp,
+                            }
+                        )
+                        if len(found) >= 12:
+                            break
+                    if len(found) >= 12:
+                        break
+                if found:
+                    return rng.choice(found)
                 return None
 
             candidate = _try_fill(check_perp=True)

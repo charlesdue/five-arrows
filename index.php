@@ -9,9 +9,13 @@ $runlog = 'run.log';
 
 $action = $_POST['action'] ?? null;
 $output = '';
+$last_seed = null;
 
 if ($action === 'start') {
-    $cmd = $python . ' ' . $script;
+    $last_seed = (int)(microtime(true) * 1000) & 0xFFFFFFFF;
+    @unlink($state);
+    @unlink($runlog);
+    $cmd = $python . ' ' . $script . ' --seed ' . $last_seed . ' --max-mandatory 5';
     if (stripos(PHP_OS, 'WIN') === 0) {
         // Detached start on Windows, redirect output to run.log
         $cmdline = 'start "mots" /b cmd /c "' . $cmd . ' > ' . $runlog . ' 2>&1"';
@@ -19,7 +23,7 @@ if ($action === 'start') {
     } else {
         exec($cmd . ' > ' . $runlog . ' 2>&1 &');
     }
-    $output = 'STARTED';
+    $output = 'STARTED seed=' . $last_seed;
 } elseif ($action === 'stop') {
     if (stripos(PHP_OS, 'WIN') === 0) {
         exec('taskkill /F /IM python.exe 2>nul');
@@ -31,6 +35,18 @@ if ($action === 'start') {
 
 $state_mtime = file_exists($state) ? date('H:i:s', filemtime($state)) : 'missing';
 $runlog_mtime = file_exists($runlog) ? date('H:i:s', filemtime($runlog)) : 'missing';
+
+if (isset($_GET['state'])) {
+    header('Content-Type: application/json; charset=utf-8');
+    header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+    header('Pragma: no-cache');
+    if (file_exists($state)) {
+        readfile($state);
+    } else {
+        echo json_encode(["grid" => null, "logs" => []], JSON_UNESCAPED_UNICODE);
+    }
+    exit;
+}
 ?>
 <!doctype html>
 <html>
@@ -63,37 +79,47 @@ $runlog_mtime = file_exists($runlog) ? date('H:i:s', filemtime($runlog)) : 'miss
     <div id="grid"></div>
     <div id="log"></div>
   </div>
+  <h3>Grille texte</h3>
+  <pre id="grid-text" style="border:1px solid #ddd; padding:12px; white-space:pre; overflow:auto; max-height:360px;"></pre>
   <script>
     const gridEl = document.getElementById('grid');
     const logEl = document.getElementById('log');
+    const gridTextEl = document.getElementById('grid-text');
     function render(data) {
       if (!data || !data.grid) return;
       const { width, height, cells } = data.grid;
       let html = '<table class="grid">';
+      let textLines = [];
       for (let y = 0; y < height; y++) {
         html += '<tr>';
+        let row = [];
         for (let x = 0; x < width; x++) {
           const c = cells[y * width + x];
           if (c.type === 'DEF') {
             const dirs = (c.defs || []).map(d => d.direction === 'RIGHT' ? 'R' : d.direction === 'DOWN' ? 'D' : 'RD').join(',');
             html += `<td class="def">${dirs}</td>`;
+            row.push('DEF');
           } else if (c.type === 'LETTER' && c.letter) {
             html += `<td class="letter">${c.letter}</td>`;
+            row.push(c.letter);
           } else {
             html += '<td></td>';
+            row.push('.');
           }
         }
         html += '</tr>';
+        textLines.push(row.join(' | '));
       }
       html += '</table>';
       gridEl.innerHTML = html;
+      gridTextEl.textContent = textLines.join("\n");
       if (data.logs) {
         logEl.textContent = data.logs.join("\n");
         logEl.scrollTop = logEl.scrollHeight;
       }
     }
     function poll() {
-      fetch('state.json?_=' + Date.now())
+      fetch('index.php?state=1&_=' + Date.now())
         .then(r => r.ok ? r.json() : null)
         .then(render)
         .catch(() => {});
