@@ -1,58 +1,60 @@
-RUN start seed=1952385145 max_mandatory=5 max_steps=500
-[001] oblig OBTUS DOWN @ (8,1) len=20 pattern=.................... +DEF (8,6)
-[002] fill PIS DOWN @ (2,1) len=20 pattern=.................... +DEF (2,4)
-[003] fill CAVE RIGHT @ (9,6) len=4 pattern=....
-[004] fill MARQUER RIGHT @ (1,6) len=7 pattern=.......
-[005] fill MIRAGE RIGHT @ (1,16) len=12 pattern=............ +DEF (7,16)
-[006] fill KILO RIGHT @ (3,4) len=10 pattern=.....U.... +DEF (7,4)
-[007] fill USE RIGHT @ (8,4) len=5 pattern=U.... +DEF (11,4)
-[008] fill OVATIONNER DOWN @ (11,5) len=16 pattern=.V.............. +DEF (11,15)
-[009] fill TORSE DOWN @ (11,16) len=5 pattern=.....
-[010] fill RECHAUD RIGHT @ (1,18) len=12 pattern=..........R. +DEF (8,18)
-[011] fill PISTE RIGHT @ (8,16) len=5 pattern=...T.
-[012] fill DRAP DOWN @ (11,0) len=4 pattern=....
-[013] fill PIVERT RIGHT @ (1,2) len=12 pattern=.I.....B..A. +DEF (7,2)
-[014] fill COURSES RIGHT @ (1,10) len=12 pattern=..........O. +DEF (8,10)
-[015] fill FRANGIN RIGHT @ (1,14) len=12 pattern=..........R. +DEF (8,14)
-[016] fill PARE RIGHT @ (9,14) len=4 pattern=..R.
-[017] fill PARU RIGHT @ (9,18) len=4 pattern=..R.
-[018] fill BY RIGHT @ (8,2) len=5 pattern=B..A. +DEF (10,2)
-[019] fill AI RIGHT @ (11,2) len=2 pattern=A.
-[020] fill FAILLE RIGHT @ (1,8) len=12 pattern=..........T. +DEF (7,8)
-[021] fill EGON RIGHT @ (9,10) len=4 pattern=..O.
-[022] fill SLOVENES RIGHT @ (1,20) len=12 pattern=..........E. +DEF (9,20)
-[023] fill REGULIER RIGHT @ (1,12) len=12 pattern=..........N. +DEF (9,12)
-[024] fill BEC RIGHT @ (10,20) len=3 pattern=.E.
-[025] fill SA RIGHT @ (8,8) len=5 pattern=...T. +DEF (10,8)
-[026] fill AN RIGHT @ (10,12) len=3 pattern=.N. +DEF (12,12)
-[027] fill ET DOWN @ (6,1) len=20 pattern=.T.O.E.E.E.I.I.E.U.N +DEF (6,3)
-[028] fill GUY DOWN @ (9,0) len=12 pattern=..Y.S.C.A.E. +DEF (9,3)
-[029] fill TE RIGHT @ (11,8) len=2 pattern=T.
-[030] fill GEL RIGHT @ (0,17) len=13 pattern=...........O. +DEF (3,17)
-[031] fill US DOWN @ (7,9) len=7 pattern=.S.E.N. +DEF (7,11)
-[032] fill ART DOWN @ (8,11) len=3 pattern=.R.
-[033] fill OPA DOWN @ (8,15) len=3 pattern=.P.
-[034] fill OR DOWN @ (7,5) len=3 pattern=.R. +DEF (7,7)
-[035] fill AS DOWN @ (8,7) len=3 pattern=.S. +DEF (8,9)
-[036] fill AU RIGHT @ (8,11) len=5 pattern=A..N. +DEF (10,11)
-[037] fill VA DOWN @ (2,5) len=16 pattern=.A.A.O.E.R.ILE.L +DEF (2,7)
-[038] fill SEC DOWN @ (9,4) len=8 pattern=S.C.A.EU +DEF (9,7)
-[039] fill NE RIGHT @ (11,11) len=2 pattern=N.
-[040] fill LA RIGHT @ (10,7) len=3 pattern=.A. +DEF (12,7)
-[041] fill VUS RIGHT @ (0,3) len=6 pattern=..S... +DEF (3,3)
-[042] fill DEMI DOWN @ (4,1) len=20 pattern=.E.I.Q.L.R.U.N.A.H.V +DEF (4,5)
-[043] fill OS DOWN @ (8,19) len=2 pattern=.S
-[044] fill ATOME DOWN @ (2,8) len=13 pattern=A.O.E.R.ILE.L +DEF (2,13)
-[045] fill AVEU DOWN @ (9,8) len=4 pattern=A.EU
-[046] fill OPERE DOWN @ (6,4) len=17 pattern=O.E.E.E.I.I.E.U.N +DEF (6,9)
-[047] fill ADAMS DOWN @ (10,12) len=9 pattern=A.A.S.A.B +DEF (10,17)
-[048] fill EDIFICE DOWN @ (6,10) len=11 pattern=E.I.I.E.U.N +DEF (6,17)
-[049] fill OC RIGHT @ (11,17) len=2 pattern=O.
-INJECT: adding 3 DEF cells with forced word placement
+RUN start seed=1952643118 max_mandatory=5 max_steps=500
+[001] oblig HONNI DOWN @ (6,1) len=20 pattern=.................... +DEF (6,6)
+[002] oblig IRE DOWN @ (10,1) len=20 pattern=.................... +DEF (10,4)
+[003] fill TANGO RIGHT @ (1,6) len=5 pattern=.....
+[004] fill PU RIGHT @ (11,4) len=2 pattern=..
+[005] fill REGAIN RIGHT @ (1,4) len=9 pattern=.....N... +DEF (7,4)
+[006] fill RU DOWN @ (4,1) len=20 pattern=...A.G.............. +DEF (4,3)
+[007] fill NON RIGHT @ (0,3) len=4 pattern=.... +DEF (3,3)
+[008] fill GENERALES DOWN @ (3,4) len=17 pattern=G.N.............. +DEF (3,13)
+[009] fill DO RIGHT @ (8,4) len=2 pattern=..
+[010] fill PIB RIGHT @ (0,13) len=3 pattern=...
+[011] fill BANDIT RIGHT @ (7,6) len=6 pattern=......
+[012] fill BARQUE RIGHT @ (1,20) len=12 pattern=............ +DEF (7,20)
+[013] fill PUCE RIGHT @ (4,13) len=9 pattern=......... +DEF (8,13)
+[014] fill SHAH RIGHT @ (9,13) len=4 pattern=....
+[015] fill BAL RIGHT @ (1,10) len=12 pattern=..L......... +DEF (4,10)
+[016] fill POIX RIGHT @ (5,10) len=8 pattern=........ +DEF (9,10)
+[017] fill BIJOU RIGHT @ (8,20) len=5 pattern=.....
+[018] fill OH RIGHT @ (10,10) len=3 pattern=... +DEF (12,10)
+[019] fill VERSE RIGHT @ (1,8) len=12 pattern=..R......... +DEF (6,8)
+[020] fill MANU DOWN @ (12,1) len=9 pattern=...U.T... +DEF (12,5)
+[021] fill TELE DOWN @ (12,6) len=4 pattern=T...
+[022] fill BAHAMAS DOWN @ (12,11) len=10 pattern=..H......U +DEF (12,18)
+[023] fill NU DOWN @ (12,19) len=2 pattern=.U
+[024] fill MAGOUILLEUR RIGHT @ (1,18) len=11 pattern=...........
+[025] fill DON DOWN @ (3,0) len=3 pattern=...
+[026] fill AI DOWN @ (8,1) len=12 pattern=...D.A...X.. +DEF (8,3)
+[027] fill ANC RIGHT @ (5,3) len=3 pattern=.N.
+[028] fill EPATE RIGHT @ (1,16) len=12 pattern=...........A +DEF (6,16)
+[029] fill TU DOWN @ (1,0) len=21 pattern=...OR.T.V.B..I..E.M.B +DEF (1,2)
+[030] fill GALL RIGHT @ (7,8) len=6 pattern=.....L +DEF (11,8)
+[031] fill SU RIGHT @ (0,1) len=13 pattern=.U.OR.H.A.I.M +DEF (2,1)
+[032] fill OR RIGHT @ (3,1) len=10 pattern=OR.H.A.I.M +DEF (5,1)
+[033] fill COLS RIGHT @ (7,16) len=6 pattern=.....A +DEF (11,16)
+[034] fill ONU RIGHT @ (2,2) len=11 pattern=.NU.O.I.R.A +DEF (5,2)
+[035] fill VIDE DOWN @ (6,17) len=4 pattern=.I.E
+[036] fill ONE DOWN @ (2,2) len=19 pattern=ONE.A.E.A..B..P.A.A +DEF (2,5)
+[037] fill SAS DOWN @ (9,11) len=10 pattern=..S..L.E.I +DEF (9,14)
+[038] fill BOX DOWN @ (6,9) len=7 pattern=.O..C.. +DEF (6,12)
+[039] fill CSA DOWN @ (3,14) len=7 pattern=..A.G.R +DEF (3,17)
+[040] fill BD DOWN @ (10,5) len=16 pattern=.D.L.O..H..S.U.J +DEF (10,7)
+[041] fill SAOUL DOWN @ (8,14) len=7 pattern=..O.L.B +DEF (8,19)
+[042] fill LE RIGHT @ (11,7) len=2 pattern=.E
+[043] fill LUC RIGHT @ (1,14) len=8 pattern=..C....S +DEF (4,14)
+[044] fill ANE DOWN @ (2,6) len=15 pattern=A.E.A..BU.P.A.A +DEF (2,9)
+[045] fill CE DOWN @ (6,13) len=3 pattern=C.. +DEF (6,15)
+[046] fill ANGES DOWN @ (4,4) len=6 pattern=A.G.S. +DEF (4,9)
+[047] fill EN RIGHT @ (3,5) len=9 pattern=EN.I...B. +DEF (5,5)
+[048] fill NETS RIGHT @ (5,14) len=4 pattern=.E.S
+INJECT: target=2 (check_perp=False)
+INJECT: no placement found after 80 attempts
 STOP: aucun mot placable.
-DONE: placed=49 unplaced=4
-[001] oblig OBTUS DOWN @ (8,1) len=5 pattern=OBTUS
+DONE: placed=48 unplaced=3
+[001] oblig HONNI DOWN @ (6,1) len=5 pattern=HONNI
 HB steps=1 queue_idx=1 used_slots=1
-INJECT: adding 5 DEF cells with forced word placement
+[002] oblig IRE DOWN @ (10,1) len=3 pattern=IRE
+INJECT: target=5 (check_perp=False)
+INJECT: no placement found after 80 attempts
 STOP: aucun mot placable.
-DONE: placed=1 unplaced=4
+DONE: placed=2 unplaced=3

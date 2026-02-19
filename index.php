@@ -69,8 +69,8 @@ if (isset($_GET['state'])) {
 <body>
   <h2>Mots fleches - Viewer</h2>
   <form method="post" style="margin-bottom:12px;">
-    <button type="submit" name="action" value="start">Start</button>
-    <button type="submit" name="action" value="stop">Stop</button>
+    <button id="start-btn" type="submit" name="action" value="start">Start</button>
+    <button id="stop-btn" type="submit" name="action" value="stop">Stop</button>
     <span class="meta">status: <?= htmlspecialchars($output, ENT_QUOTES) ?></span>
     <span class="meta">state.json: <?= htmlspecialchars($state_mtime, ENT_QUOTES) ?></span>
     <span class="meta">run.log: <?= htmlspecialchars($runlog_mtime, ENT_QUOTES) ?></span>
@@ -85,6 +85,23 @@ if (isset($_GET['state'])) {
     const gridEl = document.getElementById('grid');
     const logEl = document.getElementById('log');
     const gridTextEl = document.getElementById('grid-text');
+    const startBtn = document.getElementById('start-btn');
+    const stopBtn = document.getElementById('stop-btn');
+
+    const AUTOPOLL_KEY = 'mf_autopoll';
+    if (startBtn) {
+      startBtn.addEventListener('click', () => {
+        localStorage.setItem(AUTOPOLL_KEY, '1');
+      });
+    }
+    if (stopBtn) {
+      stopBtn.addEventListener('click', () => {
+        localStorage.removeItem(AUTOPOLL_KEY);
+        gridEl.innerHTML = '';
+        gridTextEl.textContent = '';
+        logEl.textContent = '';
+      });
+    }
     function render(data) {
       if (!data || !data.grid) return;
       const { width, height, cells } = data.grid;
@@ -124,8 +141,10 @@ if (isset($_GET['state'])) {
         .then(render)
         .catch(() => {});
     }
-    setInterval(poll, 1000);
-    poll();
+    if (localStorage.getItem(AUTOPOLL_KEY) === '1') {
+      setInterval(poll, 1000);
+      poll();
+    }
   </script>
 </body>
 </html>
