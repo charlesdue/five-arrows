@@ -121,6 +121,8 @@ class DictionaryIndex:
     words: Set[str]
     pattern_cache: Dict[str, bool] = field(default_factory=dict)
     bigrams: Set[str] = field(default_factory=set)
+    substrings: Set[str] = field(default_factory=set)
+    substring_cache: Dict[str, bool] = field(default_factory=dict)
 
     def matches_pattern(self, pattern: str) -> bool:
         cached = self.pattern_cache.get(pattern)
@@ -138,6 +140,25 @@ class DictionaryIndex:
                 self.pattern_cache[pattern] = True
                 return True
         self.pattern_cache[pattern] = False
+        return False
+
+    def contains_substring(self, seq: str) -> bool:
+        cached = self.substring_cache.get(seq)
+        if cached is not None:
+            return cached
+        if seq in self.substrings:
+            self.substring_cache[seq] = True
+            return True
+        n = len(seq)
+        # Fallback: scan longer words when sequence is longer than precomputed window.
+        for L, words in self.by_length.items():
+            if L < n:
+                continue
+            for w in words:
+                if seq in w:
+                    self.substring_cache[seq] = True
+                    return True
+        self.substring_cache[seq] = False
         return False
 
 
@@ -253,11 +274,17 @@ def build_dictionary_index(words: Sequence[str]) -> DictionaryIndex:
     by_length: Dict[int, List[str]] = {}
     word_set = set(words)
     bigrams: Set[str] = set()
+    substrings: Set[str] = set()
+    max_precompute = 8
     for w in words:
         by_length.setdefault(len(w), []).append(w)
         for i in range(len(w) - 1):
             bigrams.add(w[i : i + 2])
-    return DictionaryIndex(by_length=by_length, words=word_set, bigrams=bigrams)
+        max_sub = min(max_precompute, len(w))
+        for L in range(2, max_sub + 1):
+            for i in range(len(w) - L + 1):
+                substrings.add(w[i : i + L])
+    return DictionaryIndex(by_length=by_length, words=word_set, bigrams=bigrams, substrings=substrings)
 
 
 def def_priority(def_pos: Optional[Tuple[int, int]], width: int, height: int) -> int:
@@ -1287,7 +1314,7 @@ def adjacent_letter_sequences_ok(grid: Grid, dict_index: DictionaryIndex, change
                 cx += 1
             if len(letters) >= 2:
                 word = "".join(letters)
-                if word not in dict_index.words:
+                if not dict_index.contains_substring(word):
                     return False
             seen.add((sx, y, "RIGHT"))
         # Vertical run
@@ -1302,7 +1329,7 @@ def adjacent_letter_sequences_ok(grid: Grid, dict_index: DictionaryIndex, change
                 cy += 1
             if len(letters) >= 2:
                 word = "".join(letters)
-                if word not in dict_index.words:
+                if not dict_index.contains_substring(word):
                     return False
             seen.add((x, sy, "DOWN"))
     return True

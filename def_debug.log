@@ -9931,3 +9931,863 @@
 2026-02-19 06:40:03,886 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
 2026-02-19 06:40:03,886 INFO DEF pass: target_defs=12 candidates=59
 2026-02-19 06:40:03,898 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:12,708 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:12,765 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:12,766 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:12,822 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:12,824 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:12,881 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:12,881 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:12,940 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:12,940 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:12,997 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:12,998 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,061 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,062 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,102 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,102 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,171 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,171 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,222 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,222 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,268 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,268 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,318 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,318 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,388 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,389 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,446 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,446 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,505 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,506 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,576 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,577 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,634 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,634 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,699 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,699 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,740 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,740 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,801 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,801 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,856 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,858 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,914 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,915 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:13,976 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:13,976 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,033 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,034 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,094 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,095 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,151 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,152 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,201 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,201 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,271 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,271 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,317 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,317 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,385 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,386 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,441 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,444 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,519 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,520 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,576 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,577 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,634 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,634 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,688 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,688 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,732 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,732 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,802 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,802 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,865 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,865 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,931 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,932 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:14,990 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:14,990 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,056 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,058 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,100 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,100 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,164 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,164 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,233 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,234 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,309 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,309 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,366 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,366 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,429 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,429 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,492 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,493 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,546 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,547 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,600 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,600 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,665 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,668 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,726 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,726 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,797 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,798 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,859 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,859 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,926 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:15,927 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:15,999 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,000 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,051 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,051 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,113 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,113 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,182 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,184 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,247 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,247 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,299 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,303 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,351 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,351 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,422 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,422 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,484 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,484 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,531 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,539 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,595 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,595 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,666 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,667 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,767 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,767 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,825 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,826 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,880 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,880 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,928 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,928 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:16,981 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:16,981 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,044 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,044 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,099 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,099 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,146 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,146 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,213 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,213 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,265 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,266 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,317 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,317 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,372 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,373 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,412 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 06:59:17,412 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 06:59:17,476 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,072 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,119 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,119 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,184 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,184 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,243 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,243 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,309 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,312 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,373 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,373 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,437 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,437 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,523 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,523 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,603 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,604 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,667 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,667 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,742 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,747 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,819 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,820 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,887 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,888 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:16,975 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:16,975 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,071 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,073 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,141 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,142 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,209 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,210 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,270 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,271 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,341 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,341 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,399 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,399 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,451 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,455 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,536 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,537 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,587 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,588 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,631 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,631 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,699 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,700 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,749 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,749 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,818 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,819 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,869 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,869 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,928 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,929 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:17,982 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:17,983 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,049 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,054 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,115 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,116 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,180 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,181 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,244 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,244 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,284 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,284 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,348 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,349 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,407 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,408 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,479 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,479 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,558 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,558 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,630 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,630 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,698 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,703 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,785 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,786 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,838 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,839 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,922 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,923 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:18,996 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:18,997 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,070 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,070 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,144 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,144 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,219 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,220 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,311 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,313 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,395 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,395 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,481 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,488 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,558 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,558 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,634 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,646 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,722 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,723 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,803 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,803 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,897 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,898 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:19,969 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:19,969 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,057 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,058 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,139 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,141 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,218 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,219 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,306 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,311 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,408 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,408 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,480 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,481 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,545 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,546 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,595 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,595 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,645 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,646 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,698 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,699 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,783 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,783 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,875 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,876 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:20,952 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:20,953 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,024 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,027 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,101 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,102 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,175 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,177 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,267 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,267 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,353 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,355 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,422 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,423 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,485 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,486 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,573 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,573 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,649 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,649 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,733 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:00:21,735 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:00:21,808 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,271 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,363 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,364 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,426 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,426 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,508 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,508 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,614 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,614 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,727 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,729 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,818 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,818 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:33,942 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:33,943 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,037 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,038 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,106 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,106 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,161 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,177 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,247 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,248 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,319 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,321 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,383 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,383 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,426 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,426 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,474 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,474 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,559 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,560 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,617 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,617 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,738 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,740 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,836 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,836 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:34,923 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:34,927 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,071 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,072 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,127 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,128 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,213 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,213 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,278 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,278 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,327 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,327 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,411 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,414 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,480 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,480 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,620 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,632 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,741 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,741 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,860 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,867 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:35,991 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:35,991 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,100 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,102 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,184 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,184 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,268 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,271 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,349 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,349 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,396 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,412 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,570 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,570 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,652 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,654 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,723 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,723 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:36,833 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:36,839 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,007 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,007 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,146 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,146 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,303 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,303 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,445 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,445 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,587 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,587 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,694 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,694 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,862 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,864 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:37,974 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:37,990 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:38,114 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:38,114 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:38,282 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:38,286 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:38,408 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:38,409 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:38,585 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:38,585 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:38,771 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:38,771 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:38,897 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:38,897 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,022 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,022 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,147 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,147 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,292 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,292 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,408 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,409 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,514 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,515 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,663 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,679 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,828 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,829 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:39,912 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:39,929 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,038 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,050 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,178 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,178 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,302 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,302 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,387 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,388 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,443 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,443 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,563 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,563 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,661 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,661 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,820 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,820 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:40,930 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:40,944 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,092 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,092 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,193 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,193 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,320 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,320 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,460 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,460 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,584 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,584 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,727 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,728 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,862 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,864 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:41,979 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:03:41,981 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:03:42,077 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,056 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,064 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,065 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,068 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,068 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,084 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,084 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,100 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,100 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,113 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,113 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,131 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,132 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,134 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,134 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,148 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,148 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,158 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:04:53,158 INFO DEF pass: target_defs=9 candidates=44
+2026-02-19 07:04:53,172 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,544 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,592 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,592 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,667 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,667 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,721 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,721 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,766 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,766 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,824 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,826 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,861 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,861 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,926 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,926 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:22,987 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:22,987 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,035 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,035 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,094 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,094 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,169 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,170 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,238 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,239 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,302 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,303 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,382 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,383 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,458 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,458 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,530 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,531 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,639 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,640 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,726 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,726 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,809 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,809 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:23,909 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:23,910 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,001 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,002 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,126 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,126 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,257 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,257 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,340 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,341 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,432 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,432 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,503 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,504 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,594 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,594 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,688 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,688 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,740 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,740 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,822 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,824 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:24,917 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:24,917 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,006 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,006 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,071 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,072 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,141 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,142 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,227 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,228 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,297 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,298 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,363 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,363 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,438 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,439 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,521 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,522 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,606 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,606 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,701 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,701 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,765 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,780 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,844 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,844 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,930 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,930 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:25,994 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:25,994 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,056 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,056 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,135 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,135 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,214 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,230 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,370 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,371 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,432 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,437 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,461 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,472 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,505 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,505 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,529 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,529 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,562 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,562 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,590 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,590 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,620 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,620 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,645 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,645 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,679 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,679 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,696 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,696 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,738 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,740 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,768 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,769 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,807 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,808 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,841 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,841 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,866 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,866 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,902 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,902 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,931 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,931 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,945 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,945 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:26,978 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:26,978 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,015 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,015 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,044 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,046 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,080 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,080 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,107 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,107 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,136 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,136 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,173 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,174 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,210 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,210 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,242 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,242 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,269 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,269 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,297 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,297 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,327 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:09:27,328 INFO DEF pass: target_defs=56 candidates=256
+2026-02-19 07:09:27,358 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-19 07:10:34,035 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,050 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,050 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,050 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,050 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,050 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,050 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,066 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,066 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,066 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,066 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,082 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,082 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,082 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,082 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,098 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,098 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,098 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-19 07:10:34,098 INFO DEF pass: target_defs=8 candidates=40
+2026-02-19 07:10:34,098 WARNING DEF pass failed: placed=0 err=More than 2 adjacent DEF cells in a row/column
+2026-02-21 12:43:12,108 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,226 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,229 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,345 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,345 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,461 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,461 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,572 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,572 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,680 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,682 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,782 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,784 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:12,896 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:12,898 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,016 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,017 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,125 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,127 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,240 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,247 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,355 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,355 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,464 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,464 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,565 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,568 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,685 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,685 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,791 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,793 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:13,903 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:13,905 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,016 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,018 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,130 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,130 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,241 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,243 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,353 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,359 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,474 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,476 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,584 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,584 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,693 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,693 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,803 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,803 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:14,929 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:14,931 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,042 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,042 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,166 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,168 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,291 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,293 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,404 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,404 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,519 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,530 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,647 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,647 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,775 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,777 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:15,892 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:15,892 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,007 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,009 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,127 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,129 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,247 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,247 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,368 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,368 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,488 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,491 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,602 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,602 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,725 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,732 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,845 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,845 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:16,966 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:16,966 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,086 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,088 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,204 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,206 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,324 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,324 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,447 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,447 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,549 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,549 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,666 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,666 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,784 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,786 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:17,901 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:17,908 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,028 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,030 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,144 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,144 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,248 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,248 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,376 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,376 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,491 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,493 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,615 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,617 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,733 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,733 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,852 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,854 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:18,993 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:18,994 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,101 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,119 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,239 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,240 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,351 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,351 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,467 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,467 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,583 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,585 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,703 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,705 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,821 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,821 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:19,949 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:19,951 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,068 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,068 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,184 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,184 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,306 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,314 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,435 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,435 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,554 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,554 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,656 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,658 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,782 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,784 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:20,900 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:20,900 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:21,020 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:21,020 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:21,139 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:21,139 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:21,261 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:21,263 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:21,384 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:43:21,384 INFO DEF pass: target_defs=56 candidates=256
+2026-02-21 12:43:21,501 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,075 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,101 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,101 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,126 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,126 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,160 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,160 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,189 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,189 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,217 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,217 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,243 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,243 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,296 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,296 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,336 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,338 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,377 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0
+2026-02-21 12:45:06,379 INFO DEF pass: target_defs=12 candidates=56
+2026-02-21 12:45:06,421 WARNING DEF pass failed: placed=0 err=1-letter segment exists at RIGHT 1,0

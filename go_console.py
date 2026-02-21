@@ -229,10 +229,12 @@ def run(
     max_stagnation = 200
 
     rng = random.Random(1000 + seed)
+    placements: list[dict] = []
+    cell_use_count: dict[tuple[int, int], int] = {}
 
     def write_state() -> None:
         try:
-            payload = {"grid": grid.to_json(), "logs": log_buffer}
+            payload = {"grid": grid.to_json(), "logs": log_buffer, "placements": placements[-200:]}
             with open(STATE_PATH, "w", encoding="utf-8") as f:
                 json.dump(payload, f, ensure_ascii=False)
         except Exception:
@@ -250,7 +252,108 @@ def run(
             grid_cb(grid)
         write_state()
 
-    def _try_add_def_at(x: int, y: int, check_perp: bool) -> tuple[Grid, set, set, set, list] | None:
+    def _iter_word_cells(start_x: int, start_y: int, direction: str, length: int):
+        x, y = start_x, start_y
+        for _ in range(length):
+            yield x, y
+            if direction == "RIGHT":
+                x += 1
+            else:
+                y += 1
+
+    def _track_place_on(
+        grid_obj: Grid,
+        use_map: dict[tuple[int, int], int],
+        placement_list: list[dict],
+        word: str,
+        slot: Slot,
+        mandatory: bool,
+    ) -> None:
+        for x, y in _iter_word_cells(slot.start_x, slot.start_y, slot.direction, len(word)):
+            use_map[(x, y)] = use_map.get((x, y), 0) + 1
+        placement_list.append(
+            {
+                "word": word,
+                "start_x": slot.start_x,
+                "start_y": slot.start_y,
+                "direction": slot.direction,
+                "length": len(word),
+                "mandatory": bool(mandatory),
+            }
+        )
+
+    def _placement_covers_cell(p: dict, x: int, y: int) -> bool:
+        if p["direction"] == "RIGHT":
+            if y != p["start_y"]:
+                return False
+            return p["start_x"] <= x < p["start_x"] + p["length"]
+        if x != p["start_x"]:
+            return False
+        return p["start_y"] <= y < p["start_y"] + p["length"]
+
+    def _slot_cells(slot: Slot, word_len: int | None = None):
+        n = slot.length if word_len is None else word_len
+        return list(_iter_word_cells(slot.start_x, slot.start_y, slot.direction, n))
+
+    def _clear_letter_if_unused(grid_obj: Grid, use_map: dict[tuple[int, int], int], x: int, y: int) -> None:
+        if use_map.get((x, y), 0) != 0:
+            return
+        c = grid_obj.get(x, y)
+        c.letter = None
+        if c.type == "LETTER":
+            c.type = None
+
+    def _remove_placement_at_index(
+        grid_obj: Grid,
+        use_map: dict[tuple[int, int], int],
+        placement_list: list[dict],
+        idx: int,
+    ) -> dict:
+        p = placement_list.pop(idx)
+        for x, y in _iter_word_cells(p["start_x"], p["start_y"], p["direction"], p["length"]):
+            cur = use_map.get((x, y), 0)
+            if cur <= 1:
+                use_map.pop((x, y), None)
+            else:
+                use_map[(x, y)] = cur - 1
+            _clear_letter_if_unused(grid_obj, use_map, x, y)
+        return p
+
+    def _pattern_matches_exact(word: str, pattern: str) -> bool:
+        if len(word) != len(pattern):
+            return False
+        for ch, pch in zip(word, pattern):
+            if pch != "." and pch != ch:
+                return False
+        return True
+
+    def _sample_words_for_exact_pattern(
+        length: int,
+        pattern: str,
+        used: set[str],
+        rng_obj: random.Random,
+        max_candidates: int = 50,
+        scan_cap: int = 4000,
+    ) -> list[str]:
+        words = dict_index.by_length.get(length, [])
+        if not words:
+            return []
+        out: list[str] = []
+        start = rng_obj.randrange(len(words))
+        scanned = 0
+        for k in range(len(words)):
+            if scanned >= scan_cap or len(out) >= max_candidates:
+                break
+            scanned += 1
+            w = words[(start + k) % len(words)]
+            if w in used:
+                continue
+            if _pattern_matches_exact(w, pattern):
+                out.append(w)
+        rng_obj.shuffle(out)
+        return out
+
+    def _try_add_def_at(x: int, y: int, check_perp: bool):
         if not grid.in_bounds(x, y):
             return None
         c0 = grid.get(x, y)
@@ -283,6 +386,8 @@ def run(
             t_predefs = set(predefs)
             t_used_slots = set(used_slots)
             t_used_words = set(used_words)
+            t_placements = [p.copy() for p in placements]
+            t_use = dict(cell_use_count)
             cell = trial.get(x, y)
             cell.type = "DEF"
             cell.letter = None
@@ -290,7 +395,7 @@ def run(
             if def_run_too_long(trial, set()) or has_singleton_segments(trial):
                 continue
             t_predefs.add((x, y))
-            placements = []
+            placed_words = []
             ok = True
             for d in dirs:
                 if d == "RIGHT":
@@ -332,7 +437,8 @@ def run(
                         _placement, added_def = res
                         t_used_words.add(w)
                         t_used_slots.add((slot.start_x, slot.start_y, slot.direction))
-                        placements.append((w, slot, added_def))
+                        _track_place_on(trial, t_use, t_placements, w, slot, mandatory=False)
+                        placed_words.append((w, slot, added_def))
                         placed = True
                         break
                 if not placed:
@@ -342,11 +448,11 @@ def run(
                 continue
             if def_run_too_long(trial, set()) or has_singleton_segments(trial):
                 continue
-            return trial, t_predefs, t_used_slots, t_used_words, placements
+            return trial, t_predefs, t_used_slots, t_used_words, placed_words, t_placements, t_use
         return None
 
     def _inject_defs_with_words(check_perp: bool) -> int:
-        nonlocal grid, predefs, used_slots, used_words, steps
+        nonlocal grid, predefs, used_slots, used_words, steps, placements, cell_use_count
         target = rng.randint(2, 7)
         log(f"INJECT: target={target} (check_perp={check_perp})")
         candidates = []
@@ -365,13 +471,13 @@ def run(
             res = _try_add_def_at(xx, yy, check_perp)
             if not res:
                 continue
-            grid, predefs, used_slots, used_words, placements = res
+            grid, predefs, used_slots, used_words, placed_words, placements, cell_use_count = res
             dirs = ",".join([d.direction for d in grid.get(xx, yy).defs])
             detail = []
-            for w, slot, added_def in placements:
+            for w, slot, added_def in placed_words:
                 detail.append(f"{w}@({slot.start_x},{slot.start_y}){slot.direction}")
             log(f"INJECT OK ({xx},{yy}) dirs={dirs} words={'; '.join(detail)}")
-            for w, slot, added_def in placements:
+            for w, slot, added_def in placed_words:
                 steps += 1
                 _print_place(steps, w, False, slot, added_def, log)
             emit_grid()
@@ -443,6 +549,7 @@ def run(
                             _placement, added_def = res
                             used_words.add(w)
                             used_slots.add((slot.start_x, slot.start_y, slot.direction))
+                            _track_place_on(grid, cell_use_count, placements, w, slot, mandatory=False)
                             steps += 1
                             _print_place(steps, w, False, slot, added_def, log)
                             emit_grid()
@@ -455,6 +562,273 @@ def run(
             if progress == 0:
                 break
         return placed_total
+
+    def _repair_unfilled_def_dirs(
+        max_passes: int = 3,
+        max_def_evals: int = 500,
+        max_cross_words: int = 5,
+        max_replace_candidates: int = 50,
+    ) -> tuple[int, int]:
+        nonlocal grid, predefs, used_slots, used_words, steps, placements, cell_use_count
+
+        placed_total = 0
+        replaced_total = 0
+
+        def _slot_from_def_on(grid_obj: Grid, x: int, y: int, def_dir: str) -> Slot | None:
+            if def_dir == "RIGHT":
+                sx, sy, sdir = x + 1, y, "RIGHT"
+            elif def_dir == "DOWN":
+                sx, sy, sdir = x, y + 1, "DOWN"
+            else:  # RIGHT_DOWN
+                sx, sy, sdir = x, y + 1, "RIGHT"
+            if not grid_obj.in_bounds(sx, sy) or grid_obj.get(sx, sy).type == "DEF":
+                return None
+            slot = slot_from(grid_obj, sx, sy, sdir)
+            if slot.length < 2:
+                return None
+            return slot
+
+        def _locked_pattern_for_placement(p: dict) -> str:
+            letters: list[str] = []
+            for x, y in _iter_word_cells(p["start_x"], p["start_y"], p["direction"], p["length"]):
+                if cell_use_count.get((x, y), 0) > 1:
+                    letters.append(grid.get(x, y).letter or ".")
+                else:
+                    letters.append(".")
+            return "".join(letters)
+
+        def _crossing_placement_indices_for_slot(target_slot: Slot) -> list[int]:
+            perp = "DOWN" if target_slot.direction == "RIGHT" else "RIGHT"
+            idxs: set[int] = set()
+            for x, y in _slot_cells(target_slot):
+                if grid.get(x, y).letter is None:
+                    continue
+                for idx, p in enumerate(placements):
+                    if p["direction"] != perp:
+                        continue
+                    if _placement_covers_cell(p, x, y):
+                        idxs.add(idx)
+            out = list(idxs)
+            rng.shuffle(out)
+            return out
+
+        def _word_still_used(word: str, plist: list[dict]) -> bool:
+            for p in plist:
+                if p["word"] == word:
+                    return True
+            return False
+
+        for p in range(max_passes):
+            progress = 0
+            log(f"REPAIR start pass={p + 1}")
+
+            targets = []
+            for y in range(HEIGHT):
+                for x in range(WIDTH):
+                    c = grid.get(x, y)
+                    if c.type != "DEF":
+                        continue
+                    for d in (c.defs or []):
+                        slot = _slot_from_def_on(grid, x, y, d.direction)
+                        if not slot:
+                            continue
+                        empties = slot.pattern.count(".")
+                        if empties <= 0:
+                            continue
+                        bonus = _empty_score(grid, slot.start_x, slot.start_y)
+                        targets.append((empties, slot.length, bonus, rng.random(), x, y, d.direction, slot))
+
+            targets.sort(key=lambda t: (-t[0], -t[1], -t[2], t[3]))
+
+            evals = 0
+            for empties, _len, _bonus, _r, dx, dy, def_dir, slot in targets:
+                if steps >= max_steps:
+                    break
+                evals += 1
+                if evals > max_def_evals:
+                    break
+
+                # Refresh slot pattern in case grid changed since target collection
+                slot = _slot_from_def_on(grid, dx, dy, def_dir)
+                if not slot or slot.pattern.count(".") <= 0:
+                    continue
+
+                log(
+                    f"REPAIR DEFCHK ({dx},{dy}) dir={def_dir} "
+                    f"slot=({slot.start_x},{slot.start_y}){slot.direction} "
+                    f"len={slot.length} empties={empties} pattern={slot.pattern}"
+                )
+
+                # A) direct fill attempt
+                direct_candidates = _pick_word_candidates_for_slot(
+                    slot, dict_index, used_words, rng, max_candidates=40
+                )
+                placed = False
+                if not direct_candidates:
+                    log("REPAIR direct: no candidates")
+                else:
+                    for w in direct_candidates:
+                        res = try_place_word_progressive(
+                            grid,
+                            slot,
+                            w,
+                            dict_index,
+                            predefs,
+                            check_perpendicular=True,
+                            relax_end_def_checks=True,
+                        )
+                        if not res:
+                            continue
+                        _placement, added_def = res
+                        used_words.add(w)
+                        used_slots.add((slot.start_x, slot.start_y, slot.direction))
+                        _track_place_on(grid, cell_use_count, placements, w, slot, mandatory=False)
+                        steps += 1
+                        log(f"REPAIR OK direct word={w}")
+                        _print_place(steps, w, False, slot, added_def, log)
+                        emit_grid()
+                        placed_total += 1
+                        progress += 1
+                        placed = True
+                        break
+                if placed:
+                    continue
+
+                # B) depth-1 replacement of a crossing word, only if it enables a new word from this DEF slot
+                crossing_idxs = _crossing_placement_indices_for_slot(slot)
+                if not crossing_idxs:
+                    continue
+                crossing_idxs = crossing_idxs[:max_cross_words]
+
+                for old_idx in crossing_idxs:
+                    old_p = placements[old_idx]
+                    lock_pattern = _locked_pattern_for_placement(old_p)
+                    log(
+                        f"REPAIR TRY replace old={old_p['word']} @ ({old_p['start_x']},{old_p['start_y']}){old_p['direction']} "
+                        f"len={old_p['length']} locked={lock_pattern} because DEF ({dx},{dy}) dir={def_dir}"
+                    )
+
+                    # Build replacement slot pattern from the *locked* letters
+                    rep_slot = Slot(
+                        start_x=old_p["start_x"],
+                        start_y=old_p["start_y"],
+                        direction=old_p["direction"],
+                        length=old_p["length"],
+                        pattern=lock_pattern,
+                    )
+
+                    exclude = set(used_words)
+                    exclude.discard(old_p["word"])
+                    rep_candidates = _sample_words_for_exact_pattern(
+                        old_p["length"],
+                        lock_pattern,
+                        exclude,
+                        rng,
+                        max_candidates=max_replace_candidates,
+                    )
+                    if not rep_candidates:
+                        continue
+
+                    replaced = False
+                    for new_w in rep_candidates:
+                        # Simulate on copies
+                        trial_grid = copy.deepcopy(grid)
+                        t_predefs = set(predefs)
+                        t_used_slots = set(used_slots)
+                        t_placements = [p.copy() for p in placements]
+                        t_use = dict(cell_use_count)
+                        # remove old
+                        removed = _remove_placement_at_index(trial_grid, t_use, t_placements, old_idx)
+                        t_used_words = {p["word"] for p in t_placements}
+
+                        # place replacement word
+                        res_rep = try_place_word_progressive(
+                            trial_grid,
+                            rep_slot,
+                            new_w,
+                            dict_index,
+                            t_predefs,
+                            check_perpendicular=True,
+                            relax_end_def_checks=True,
+                        )
+                        if not res_rep:
+                            continue
+                        _placement_rep, _added_def_rep = res_rep
+                        _track_place_on(
+                            trial_grid,
+                            t_use,
+                            t_placements,
+                            new_w,
+                            rep_slot,
+                            mandatory=bool(old_p.get("mandatory")),
+                        )
+                        t_used_words = {pp["word"] for pp in t_placements}
+
+                        # retry target slot after replacement (pattern may have changed)
+                        trial_slot = _slot_from_def_on(trial_grid, dx, dy, def_dir)
+                        if not trial_slot or trial_slot.pattern.count(".") <= 0:
+                            continue
+                        target_candidates = _pick_word_candidates_for_slot(
+                            trial_slot, dict_index, t_used_words, rng, max_candidates=60
+                        )
+                        if not target_candidates:
+                            continue
+                        ok_target = None
+                        for tw in target_candidates:
+                            res_t = try_place_word_progressive(
+                                trial_grid,
+                                trial_slot,
+                                tw,
+                                dict_index,
+                                t_predefs,
+                                check_perpendicular=True,
+                                relax_end_def_checks=True,
+                            )
+                            if not res_t:
+                                continue
+                            ok_target = (tw, trial_slot, res_t[1])
+                            _track_place_on(trial_grid, t_use, t_placements, tw, trial_slot, mandatory=False)
+                            t_used_slots.add((trial_slot.start_x, trial_slot.start_y, trial_slot.direction))
+                            break
+                        if not ok_target:
+                            continue
+
+                        if steps + 2 > max_steps:
+                            continue
+
+                        # Commit simulated state
+                        grid = trial_grid
+                        predefs = t_predefs
+                        used_slots = t_used_slots
+                        placements = t_placements
+                        cell_use_count = t_use
+                        used_words = {pp["word"] for pp in placements}
+
+                        steps += 1
+                        log(
+                            f"REPAIR OK replaced {removed['word']}-> {new_w} @ ({rep_slot.start_x},{rep_slot.start_y}){rep_slot.direction} "
+                            f"then placed target={ok_target[0]} from DEF ({dx},{dy}) dir={def_dir}"
+                        )
+                        # Log the replacement as a placement event, then the target placement event
+                        _print_place(steps, new_w, bool(old_p.get("mandatory")), rep_slot, None, log)
+                        steps += 1
+                        _print_place(steps, ok_target[0], False, ok_target[1], ok_target[2], log)
+                        emit_grid()
+
+                        placed_total += 1
+                        replaced_total += 1
+                        progress += 1
+                        replaced = True
+                        break
+
+                    if replaced:
+                        break
+
+            log(f"REPAIR done pass={p + 1} placed={progress} replaced={replaced_total}")
+            if progress == 0:
+                break
+
+        return placed_total, replaced_total
 
     emit_grid()
     log(f"RUN start seed={seed} max_mandatory={max_mandatory} max_steps={max_steps}")
@@ -612,6 +986,7 @@ def run(
         _placement, added_def = res
         used_slots.add((slot.start_x, slot.start_y, slot.direction))
         used_words.add(candidate["word"])
+        _track_place_on(grid, cell_use_count, placements, candidate["word"], slot, candidate["mandatory"])
         if candidate.get("mandatory") and candidate.get("queue_index") is not None:
             queue_index = candidate["queue_index"] + 1
         _print_place(steps + 1, candidate["word"], candidate["mandatory"], slot, added_def, log)
@@ -623,132 +998,15 @@ def run(
     added = _fill_unfilled_defs()
     if added > 0:
         log(f"DEF-FILL placed={added}")
-    log(f"DONE: placed={steps} unplaced={len(unplaced)}")
 
+    rep_placed, rep_replaced = _repair_unfilled_def_dirs()
+    if rep_placed > 0 or rep_replaced > 0:
+        log(f"REPAIR summary placed={rep_placed} replaced={rep_replaced}")
 
+    added2 = _fill_unfilled_defs()
+    if added2 > 0:
+        log(f"DEF-FILL placed={added2}")
 
-    queue_index = 0
-    used_slots: set[tuple[int, int, str]] = set()
-    used_words: set[str] = set()
-    unplaced: list[str] = []
-    word_attempt = 0
-    def_retry = 0
-    steps = 0
-
-    rng = random.Random(1000 + seed)
-
-    while steps < max_steps:
-        candidate = None
-
-        # Try mandatory words first
-        i = queue_index
-        while i < len(queue):
-            word = queue[i]
-            grid_copy = copy.deepcopy(grid)
-            predefs_copy = set(predefs)
-            used_slots_copy = set(used_slots)
-            res = progressive_place_next(
-                grid_copy,
-                word,
-                dict_index,
-                predefs_copy,
-                used_slots_copy,
-                seed=seed + i + word_attempt,
-            )
-            if res:
-                _placement, added_def, slot = res
-                candidate = {
-                    "word": word,
-                    "slot": slot,
-                    "added_def": added_def,
-                    "mandatory": True,
-                    "queue_index": i,
-                    "check_perp": True,
-                }
-                break
-            unplaced.append(word)
-            i += 1
-        if candidate:
-            queue_index = candidate["queue_index"]
-        else:
-            queue_index = i
-
-        if candidate is None:
-            # Expand DEF directions then retry
-            added_dirs = expand_def_directions(grid)
-            if added_dirs > 0:
-                candidate = _try_fill(check_perp=True) or _try_fill(check_perp=False)
-
-            if candidate is None:
-                added = _inject_defs_with_words(check_perp=False)
-                if added > 0:
-                    def_retry = 0
-                    continue
-                # Fallback: add more DEF cells once
-                if def_retry >= 1:
-                    added = _inject_defs_with_words(check_perp=True)
-                    if added > 0:
-                        def_retry = 0
-                        continue
-                    log("STOP: aucun mot placable.")
-                    break
-
-                before = sum(
-                    1 for y in range(HEIGHT) for x in range(WIDTH) if grid.get(x, y).type == "DEF"
-                )
-                try:
-                    auto_place_defs(grid, seed=77 + word_attempt)
-                except Exception:
-                    log("STOP: aucun mot placable.")
-                    break
-                after = sum(
-                    1 for y in range(HEIGHT) for x in range(WIDTH) if grid.get(x, y).type == "DEF"
-                )
-                if after > before:
-                    def_retry += 1
-                    continue
-                added = _inject_defs_with_words(check_perp=True)
-                if added > 0:
-                    def_retry = 0
-                    continue
-                log("STOP: aucun mot placable.")
-                break
-
-        # Apply candidate
-        slot = candidate["slot"]
-        res = try_place_word_progressive(
-            grid,
-            slot,
-            candidate["word"],
-            dict_index,
-            predefs,
-            check_perpendicular=candidate.get("check_perp", True),
-            relax_end_def_checks=True,
-        )
-        if not res:
-            word_attempt += 1
-            stagnation += 1
-            if stagnation >= max_stagnation:
-                log("STOP: stagnation.")
-                break
-            continue
-        _placement, added_def = res
-        used_slots.add((slot.start_x, slot.start_y, slot.direction))
-        used_words.add(candidate["word"])
-        if candidate.get("mandatory") and candidate.get("queue_index") is not None:
-            queue_index = candidate["queue_index"] + 1
-        _print_place(steps + 1, candidate["word"], candidate["mandatory"], slot, added_def, log)
-        emit_grid()
-        steps += 1
-        def_retry = 0
-        stagnation = 0
-        if time.time() - last_hb > 5:
-            log(f"HB steps={steps} queue_idx={queue_index} used_slots={len(used_slots)}")
-            last_hb = time.time()
-
-    added = _fill_unfilled_defs()
-    if added > 0:
-        log(f"DEF-FILL placed={added}")
     log(f"DONE: placed={steps} unplaced={len(unplaced)}")
 
 

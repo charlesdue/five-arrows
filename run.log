@@ -1,403 +1,286 @@
-RUN start seed=1952986621 max_mandatory=5 max_steps=500
-[001] oblig ASSERTIVITE DOWN @ (8,1) len=20 pattern=.................... +DEF (8,12)
-[002] oblig OURLE DOWN @ (2,1) len=20 pattern=.................... +DEF (2,6)
-[003] fill SKI RIGHT @ (9,12) len=4 pattern=.... +DEF (12,12)
-[004] fill OSE DOWN @ (12,13) len=8 pattern=........ +DEF (12,16)
-[005] fill DURE DOWN @ (12,17) len=4 pattern=....
-[006] fill NUMERO RIGHT @ (1,12) len=7 pattern=....... +DEF (7,12)
-[007] fill RONGER DOWN @ (7,13) len=8 pattern=........ +DEF (7,19)
-[008] fill USER RIGHT @ (3,6) len=10 pattern=.....T.... +DEF (7,6)
-[009] fill VRAIES DOWN @ (12,1) len=11 pattern=........... +DEF (12,7)
-[010] fill JUAN DOWN @ (12,8) len=4 pattern=....
-[011] fill FUITE RIGHT @ (1,2) len=12 pattern=.U.....S...R +DEF (6,2)
-[012] fill LORD RIGHT @ (0,19) len=7 pattern=....... +DEF (4,19)
-[013] fill DST RIGHT @ (7,2) len=6 pattern=.S...R +DEF (10,2)
-[014] fill VA RIGHT @ (5,19) len=2 pattern=..
-[015] fill TU RIGHT @ (8,6) len=5 pattern=T...S +DEF (10,6)
-[016] fill TENTEE RIGHT @ (1,10) len=12 pattern=.......T...A +DEF (7,10)
-[017] fill AIGU RIGHT @ (1,16) len=11 pattern=......G.... +DEF (5,16)
-[018] fill US RIGHT @ (11,6) len=2 pattern=.S
-[019] fill TOM RIGHT @ (8,10) len=5 pattern=T...A +DEF (11,10)
-[020] fill OR RIGHT @ (11,2) len=2 pattern=.R
-[021] fill AGE RIGHT @ (6,16) len=6 pattern=.G.... +DEF (9,16)
-[022] fill OK RIGHT @ (8,19) len=5 pattern=....R +DEF (10,19)
-[023] fill FROID RIGHT @ (1,14) len=12 pattern=......O....S +DEF (6,14)
-[024] fill SU RIGHT @ (10,16) len=2 pattern=..
-[025] fill OSER RIGHT @ (7,14) len=6 pattern=O....S +DEF (11,14)
-[026] fill MARINE RIGHT @ (1,8) len=12 pattern=.......V...J +DEF (7,8)
-[027] fill ETAI DOWN @ (4,1) len=18 pattern=.T...S.I.T.E.I.U.. +DEF (4,5)
-[028] fill ALPIN RIGHT @ (1,4) len=12 pattern=.L.I...E...I +DEF (6,4)
-[029] fill WEST RIGHT @ (7,4) len=6 pattern=.E...I +DEF (11,4)
-[030] fill USE RIGHT @ (0,5) len=4 pattern=..E. +DEF (3,5)
-[031] fill ORGE DOWN @ (6,5) len=9 pattern=.R.E.E.O. +DEF (6,9)
-[032] fill GATEAU DOWN @ (2,7) len=14 pattern=.A.E.U.R.I..R. +DEF (2,13)
-[033] fill DUT DOWN @ (9,0) len=16 pattern=..T.S.U...O.S.E. +DEF (9,3)
-[034] fill UTA DOWN @ (10,3) len=3 pattern=.T.
-[035] fill USA RIGHT @ (10,3) len=3 pattern=U.A
-[036] fill CUVE DOWN @ (5,17) len=4 pattern=..V.
-[037] fill LU DOWN @ (11,15) len=6 pattern=.U.... +DEF (11,17)
-[038] fill RE RIGHT @ (0,13) len=2 pattern=..
-[039] fill RU DOWN @ (11,5) len=5 pattern=.U... +DEF (11,7)
-[040] fill EU DOWN @ (10,7) len=12 pattern=...M.K.R.S.. +DEF (10,9)
-[041] fill AU RIGHT @ (11,9) len=2 pattern=.U
-[042] fill SAINT DOWN @ (4,6) len=13 pattern=S.I.T.E.I.U.. +DEF (4,11)
-[043] fill NON DOWN @ (11,18) len=3 pattern=...
-[044] fill BIT RIGHT @ (0,9) len=6 pattern=..T.N. +DEF (3,9)
-[045] fill NE RIGHT @ (4,9) len=2 pattern=N.
-[046] fill GUE DOWN @ (5,0) len=16 pattern=..E.N.E.NEE.R.D. +DEF (5,3)
-[047] fill ZIP RIGHT @ (7,9) len=3 pattern=.I.
-[048] fill MIL RIGHT @ (0,17) len=11 pattern=.....C.E... +DEF (3,17)
-[049] fill RUE RIGHT @ (1,20) len=12 pattern=....E.....NE +DEF (4,20)
-[050] fill EH RIGHT @ (5,20) len=8 pattern=E.....NE +DEF (7,20)
-[051] fill SCIE RIGHT @ (4,17) len=7 pattern=.C.E... +DEF (8,17)
-[052] fill NI RIGHT @ (9,17) len=2 pattern=..
-[053] fill NOS RIGHT @ (6,3) len=3 pattern=..S
-[054] fill RAIL DOWN @ (2,14) len=7 pattern=R.IL.RU +DEF (2,18)
-[055] fill EPI DOWN @ (4,12) len=7 pattern=E.I.US. +DEF (4,15)
+RUN start seed=2147664242 max_mandatory=5 max_steps=500
+[001] oblig IRE DOWN @ (6,1) len=20 pattern=.................... +DEF (6,4)
+[002] oblig HIRSUTE DOWN @ (4,1) len=20 pattern=.................... +DEF (4,8)
+[003] fill PATES RIGHT @ (7,4) len=6 pattern=...... +DEF (12,4)
+[004] fill CAR RIGHT @ (1,8) len=3 pattern=...
+[005] fill CORDE RIGHT @ (5,8) len=8 pattern=........ +DEF (10,8)
+[006] fill UNE DOWN @ (12,1) len=3 pattern=...
+[007] fill JOGGING RIGHT @ (1,14) len=12 pattern=............ +DEF (8,14)
+[008] fill TA RIGHT @ (11,8) len=2 pattern=..
+[009] fill GUY RIGHT @ (9,14) len=4 pattern=.... +DEF (12,14)
+[010] fill DROUOT DOWN @ (12,15) len=6 pattern=......
+[011] fill ARSENIC DOWN @ (10,1) len=7 pattern=...E...
+[012] fill HAVAS DOWN @ (12,5) len=9 pattern=...A..... +DEF (12,10)
+[013] fill DAN DOWN @ (12,11) len=3 pattern=...
+[014] fill AVIONS RIGHT @ (1,16) len=12 pattern=...........R +DEF (7,16)
+[015] fill MINOU RIGHT @ (1,10) len=11 pattern=........... +DEF (6,10)
+[016] fill AFP RIGHT @ (7,10) len=5 pattern=..... +DEF (10,10)
+[017] fill INHUMANITE DOWN @ (10,11) len=10 pattern=...U......
+[018] fill PRETEND RIGHT @ (1,18) len=12 pattern=.........I.U +DEF (8,18)
+[019] fill ORES RIGHT @ (1,4) len=5 pattern=...S. +DEF (5,4)
+[020] fill ROBE DOWN @ (5,0) len=4 pattern=....
+[021] fill MI RIGHT @ (9,18) len=4 pattern=.I.U +DEF (11,18)
+[022] fill PEKIN RIGHT @ (1,20) len=12 pattern=.........E.T +DEF (6,20)
+[023] fill TE DOWN @ (11,19) len=2 pattern=..
+[024] fill EN RIGHT @ (7,20) len=6 pattern=...EET +DEF (9,20)
+[025] fill INFLUENT RIGHT @ (1,12) len=12 pattern=.........N.A +DEF (9,12)
+[026] fill CE RIGHT @ (1,2) len=12 pattern=...IBR...R.N +DEF (3,2)
+[027] fill PASTICHE RIGHT @ (1,6) len=12 pattern=...T.....I.A +DEF (9,6)
+[028] fill INA RIGHT @ (10,6) len=3 pattern=I.A
+[029] fill RU RIGHT @ (0,1) len=13 pattern=....HOI...A.U +DEF (2,1)
+[030] fill OU DOWN @ (8,1) len=13 pattern=...A.E.D.F.T. +DEF (8,3)
+[031] fill AS RIGHT @ (9,3) len=4 pattern=.S.E +DEF (11,3)
+[032] fill MARINES RIGHT @ (0,11) len=13 pattern=..........I.D +DEF (7,11)
+[033] fill LOT DOWN @ (11,0) len=3 pattern=...
+[034] fill MOUSTACHE RIGHT @ (0,19) len=13 pattern=..........TTO +DEF (9,19)
+[035] fill DOS RIGHT @ (0,7) len=13 pattern=....E.....C.V +DEF (3,7)
+[036] fill ICI RIGHT @ (8,11) len=5 pattern=..I.D +DEF (11,11)
+[037] fill LUC DOWN @ (1,0) len=21 pattern=.UC.O.POC.MAI.J.A.POP +DEF (1,3)
+[038] fill AGREER RIGHT @ (2,3) len=6 pattern=..REE.
+[039] fill LOYERS DOWN @ (11,12) len=6 pattern=..Y...
+[040] fill NI DOWN @ (5,5) len=16 pattern=.I.C.UEU.I.N.EAN +DEF (5,7)
+[041] fill FUI RIGHT @ (6,7) len=7 pattern=....C.V +DEF (9,7)
+[042] fill OC DOWN @ (3,0) len=2 pattern=..
+[043] fill SOU DOWN @ (8,15) len=3 pattern=...
+[044] fill NAGY DOWN @ (7,12) len=4 pattern=N.G.
+[045] fill GERS DOWN @ (3,3) len=4 pattern=GE.S
 INJECT: target=6 (check_perp=False)
-INJECT: no placement found after 60 attempts
+INJECT: no placement found after 56 attempts
 STOP: aucun mot placable.
 DEF-FILL pass=1
-DEFCHK (0,0) dir=RIGHT_DOWN slot=(0,1)RIGHT len=13 pattern=..O.EU..AU..V
-DEFCHK (2,0) dir=RIGHT_DOWN slot=(2,1)RIGHT len=11 pattern=O.EU..AU..V
-DEFCHK (4,0) dir=RIGHT_DOWN slot=(4,1)RIGHT len=9 pattern=EU..AU..V
-DEFCHK (6,0) dir=RIGHT_DOWN slot=(6,1)RIGHT len=7 pattern=..AU..V
-DEFCHK (8,0) dir=RIGHT_DOWN slot=(8,1)RIGHT len=5 pattern=AU..V
-DEFCHK (10,0) dir=RIGHT_DOWN slot=(10,1)RIGHT len=3 pattern=..V
-DEFCHK (0,2) dir=RIGHT_DOWN slot=(0,3)RIGHT len=5 pattern=..R.A
-DEFCHK (5,3) dir=DOWN slot=(5,4)DOWN len=12 pattern=N.E.NEE.R.D.
-DEFCHK (9,3) dir=DOWN slot=(9,4)DOWN len=12 pattern=S.U..PO.S.E.
-DEFCHK (9,3) dir=RIGHT_DOWN slot=(9,4)RIGHT len=2 pattern=ST
-DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 pattern=O.R.ARE
-DEFCHK (11,4) dir=RIGHT_DOWN slot=(11,5)RIGHT len=2 pattern=RE
-DEFCHK (3,5) dir=DOWN slot=(3,6)DOWN len=3 pattern=U.R
-DEFCHK (4,5) dir=RIGHT slot=(5,5)RIGHT len=8 pattern=.O.R.ARE
-DEFCHK (4,5) dir=RIGHT_DOWN slot=(4,6)RIGHT len=3 pattern=SER
-DEFCHK (0,6) dir=RIGHT_DOWN slot=(0,7)RIGHT len=11 pattern=..G.A.G.I.E
-DEFCHK (2,6) dir=RIGHT_DOWN slot=(2,7)RIGHT len=9 pattern=G.A.G.I.E
-DEFCHK (7,6) dir=RIGHT_DOWN slot=(7,7)RIGHT len=4 pattern=.I.E
-DEFCHK (11,7) dir=DOWN slot=(11,8)DOWN len=2 pattern=.A
-DEFCHK (11,7) dir=RIGHT_DOWN slot=(11,8)RIGHT len=2 pattern=.J
-DEFCHK (7,8) dir=RIGHT slot=(8,8)RIGHT len=5 pattern=V.U.J
-DEFCHK (3,9) dir=DOWN slot=(3,10)DOWN len=7 pattern=N.M.O.G
-DEFCHK (3,9) dir=RIGHT_DOWN slot=(3,10)RIGHT len=4 pattern=NTEE
-DEFCHK (6,9) dir=DOWN slot=(6,10)DOWN len=4 pattern=E.O.
-DEFCHK (10,9) dir=DOWN slot=(10,10)DOWN len=9 pattern=M.K.R.SI.
-DEFCHK (0,10) dir=RIGHT_DOWN slot=(0,11)RIGHT len=4 pattern=..A.
-DEFCHK (7,10) dir=RIGHT_DOWN slot=(7,11)RIGHT len=6 pattern=.E...N
-DEFCHK (11,10) dir=DOWN slot=(11,11)DOWN len=3 pattern=.I.
-DEFCHK (11,10) dir=RIGHT_DOWN slot=(11,11)RIGHT len=2 pattern=.N
-[056] fill AN RIGHT @ (11,11) len=2 pattern=.N
-DEFCHK (4,11) dir=RIGHT slot=(5,11)RIGHT len=8 pattern=...E..AN
-DEFCHK (4,11) dir=RIGHT_DOWN slot=(4,12)RIGHT len=3 pattern=ERO
-DEFCHK (7,12) dir=RIGHT_DOWN slot=(7,13)RIGHT len=6 pattern=R....O
-DEFCHK (8,12) dir=DOWN slot=(8,13)DOWN len=4 pattern=.S.E
-DEFCHK (8,12) dir=RIGHT_DOWN slot=(8,13)RIGHT len=5 pattern=....O
-DEFCHK (2,13) dir=RIGHT slot=(3,13)RIGHT len=10 pattern=.P..R....O
-DEFCHK (2,13) dir=RIGHT_DOWN slot=(2,14)RIGHT len=4 pattern=ROID
-DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=4 pattern=..A.
-DEFCHK (6,14) dir=DOWN slot=(6,15)DOWN len=6 pattern=.AI.AH
-DEFCHK (6,14) dir=RIGHT_DOWN slot=(6,15)RIGHT len=7 pattern=.N...LE
-DEFCHK (11,14) dir=RIGHT_DOWN slot=(11,15)RIGHT len=2 pattern=LE
-DEFCHK (4,15) dir=RIGHT slot=(5,15)RIGHT len=8 pattern=..N...LE
-DEFCHK (4,15) dir=DOWN slot=(4,16)DOWN len=3 pattern=US.
-DEFCHK (5,16) dir=RIGHT_DOWN slot=(5,17)RIGHT len=3 pattern=CIE
-DEFCHK (9,16) dir=DOWN slot=(9,17)DOWN len=4 pattern=N.K.
-DEFCHK (3,17) dir=DOWN slot=(3,18)DOWN len=3 pattern=.DE
-DEFCHK (3,17) dir=RIGHT_DOWN slot=(3,18)RIGHT len=10 pattern=..U.R...NU
-DEFCHK (8,17) dir=DOWN slot=(8,18)DOWN len=3 pattern=.O.
-DEFCHK (8,17) dir=RIGHT_DOWN slot=(8,18)RIGHT len=5 pattern=...NU
-DEFCHK (11,17) dir=RIGHT_DOWN slot=(11,18)RIGHT len=2 pattern=NU
-DEFCHK (2,18) dir=RIGHT slot=(3,18)RIGHT len=10 pattern=..U.R...NU
-DEFCHK (2,18) dir=DOWN slot=(2,19)DOWN len=2 pattern=RU
-DEFCHK (2,18) dir=RIGHT_DOWN slot=(2,19)RIGHT len=2 pattern=RD
-DEFCHK (10,19) dir=RIGHT slot=(11,19)RIGHT len=2 pattern=OR
-DEFCHK (10,19) dir=RIGHT_DOWN slot=(10,20)RIGHT len=3 pattern=.NE
-DEFCHK (7,20) dir=RIGHT slot=(8,20)RIGHT len=5 pattern=...NE
-DEF-FILL pass=2
-DEFCHK (0,0) dir=RIGHT_DOWN slot=(0,1)RIGHT len=13 pattern=..O.EU..AU..V
-DEFCHK (2,0) dir=RIGHT_DOWN slot=(2,1)RIGHT len=11 pattern=O.EU..AU..V
-DEFCHK (4,0) dir=RIGHT_DOWN slot=(4,1)RIGHT len=9 pattern=EU..AU..V
-DEFCHK (6,0) dir=RIGHT_DOWN slot=(6,1)RIGHT len=7 pattern=..AU..V
-DEFCHK (8,0) dir=RIGHT_DOWN slot=(8,1)RIGHT len=5 pattern=AU..V
-DEFCHK (10,0) dir=RIGHT_DOWN slot=(10,1)RIGHT len=3 pattern=..V
-DEFCHK (0,2) dir=RIGHT_DOWN slot=(0,3)RIGHT len=5 pattern=..R.A
-DEFCHK (5,3) dir=DOWN slot=(5,4)DOWN len=12 pattern=N.E.NEE.R.D.
-DEFCHK (9,3) dir=DOWN slot=(9,4)DOWN len=12 pattern=S.U..PO.S.E.
-DEFCHK (9,3) dir=RIGHT_DOWN slot=(9,4)RIGHT len=2 pattern=ST
-DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 pattern=O.R.ARE
-DEFCHK (11,4) dir=RIGHT_DOWN slot=(11,5)RIGHT len=2 pattern=RE
-DEFCHK (3,5) dir=DOWN slot=(3,6)DOWN len=3 pattern=U.R
-DEFCHK (4,5) dir=RIGHT slot=(5,5)RIGHT len=8 pattern=.O.R.ARE
-DEFCHK (4,5) dir=RIGHT_DOWN slot=(4,6)RIGHT len=3 pattern=SER
-DEFCHK (0,6) dir=RIGHT_DOWN slot=(0,7)RIGHT len=11 pattern=..G.A.G.I.E
-DEFCHK (2,6) dir=RIGHT_DOWN slot=(2,7)RIGHT len=9 pattern=G.A.G.I.E
-DEFCHK (7,6) dir=RIGHT_DOWN slot=(7,7)RIGHT len=4 pattern=.I.E
-DEFCHK (11,7) dir=DOWN slot=(11,8)DOWN len=2 pattern=.A
-DEFCHK (11,7) dir=RIGHT_DOWN slot=(11,8)RIGHT len=2 pattern=.J
-DEFCHK (7,8) dir=RIGHT slot=(8,8)RIGHT len=5 pattern=V.U.J
-DEFCHK (3,9) dir=DOWN slot=(3,10)DOWN len=7 pattern=N.M.O.G
-DEFCHK (3,9) dir=RIGHT_DOWN slot=(3,10)RIGHT len=4 pattern=NTEE
-DEFCHK (6,9) dir=DOWN slot=(6,10)DOWN len=4 pattern=E.O.
-DEFCHK (10,9) dir=DOWN slot=(10,10)DOWN len=9 pattern=M.K.R.SI.
-DEFCHK (0,10) dir=RIGHT_DOWN slot=(0,11)RIGHT len=4 pattern=..A.
-DEFCHK (7,10) dir=RIGHT_DOWN slot=(7,11)RIGHT len=6 pattern=.E..AN
-DEFCHK (11,10) dir=DOWN slot=(11,11)DOWN len=3 pattern=AI.
-DEFCHK (4,11) dir=RIGHT slot=(5,11)RIGHT len=8 pattern=...E..AN
-DEFCHK (4,11) dir=RIGHT_DOWN slot=(4,12)RIGHT len=3 pattern=ERO
-DEFCHK (7,12) dir=RIGHT_DOWN slot=(7,13)RIGHT len=6 pattern=R....O
-DEFCHK (8,12) dir=DOWN slot=(8,13)DOWN len=4 pattern=.S.E
-DEFCHK (8,12) dir=RIGHT_DOWN slot=(8,13)RIGHT len=5 pattern=....O
-DEFCHK (2,13) dir=RIGHT slot=(3,13)RIGHT len=10 pattern=.P..R....O
-DEFCHK (2,13) dir=RIGHT_DOWN slot=(2,14)RIGHT len=4 pattern=ROID
-DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=4 pattern=..A.
-DEFCHK (6,14) dir=DOWN slot=(6,15)DOWN len=6 pattern=.AI.AH
-DEFCHK (6,14) dir=RIGHT_DOWN slot=(6,15)RIGHT len=7 pattern=.N...LE
-DEFCHK (11,14) dir=RIGHT_DOWN slot=(11,15)RIGHT len=2 pattern=LE
-DEFCHK (4,15) dir=RIGHT slot=(5,15)RIGHT len=8 pattern=..N...LE
-DEFCHK (4,15) dir=DOWN slot=(4,16)DOWN len=3 pattern=US.
-DEFCHK (5,16) dir=RIGHT_DOWN slot=(5,17)RIGHT len=3 pattern=CIE
-DEFCHK (9,16) dir=DOWN slot=(9,17)DOWN len=4 pattern=N.K.
-DEFCHK (3,17) dir=DOWN slot=(3,18)DOWN len=3 pattern=.DE
-DEFCHK (3,17) dir=RIGHT_DOWN slot=(3,18)RIGHT len=10 pattern=..U.R...NU
-DEFCHK (8,17) dir=DOWN slot=(8,18)DOWN len=3 pattern=.O.
-DEFCHK (8,17) dir=RIGHT_DOWN slot=(8,18)RIGHT len=5 pattern=...NU
-DEFCHK (11,17) dir=RIGHT_DOWN slot=(11,18)RIGHT len=2 pattern=NU
-DEFCHK (2,18) dir=RIGHT slot=(3,18)RIGHT len=10 pattern=..U.R...NU
-DEFCHK (2,18) dir=DOWN slot=(2,19)DOWN len=2 pattern=RU
-DEFCHK (2,18) dir=RIGHT_DOWN slot=(2,19)RIGHT len=2 pattern=RD
-DEFCHK (10,19) dir=RIGHT slot=(11,19)RIGHT len=2 pattern=OR
-DEFCHK (10,19) dir=RIGHT_DOWN slot=(10,20)RIGHT len=3 pattern=.NE
-DEFCHK (7,20) dir=RIGHT slot=(8,20)RIGHT len=5 pattern=...NE
-DEF-FILL placed=1
-DONE: placed=56 unplaced=3
-[001] oblig ASSERTIVITE DOWN @ (8,1) len=11 pattern=ASSERTIVITE
-HB steps=1 queue_idx=1 used_slots=1
-[002] oblig OURLE DOWN @ (2,1) len=5 pattern=OURLE
-INJECT: target=4 (check_perp=False)
-INJECT: no placement found after 59 attempts
-STOP: aucun mot placable.
+DEFCHK (4,0) dir=RIGHT_DOWN slot=(4,1)RIGHT len=9 pattern=HOI.O.AOU
+DEFCHK (6,0) dir=RIGHT_DOWN slot=(6,1)RIGHT len=7 pattern=I.O.AOU
+DEFCHK (8,0) dir=RIGHT_DOWN slot=(8,1)RIGHT len=5 pattern=O.AOU
+DEFCHK (10,0) dir=RIGHT_DOWN slot=(10,1)RIGHT len=3 pattern=AOU
+DEFCHK (2,1) dir=RIGHT slot=(3,1)RIGHT len=10 pattern=CHOI.O.AOU
+DEFCHK (2,1) dir=DOWN slot=(2,2)DOWN len=19 pattern=EAR.ASA.IRN.O.V.RUE
+DEFCHK (3,2) dir=RIGHT slot=(4,2)RIGHT len=9 pattern=IBR.U.RTN
+DEFCHK (3,2) dir=RIGHT_DOWN slot=(3,3)RIGHT len=5 pattern=GREER
+DEFCHK (1,3) dir=DOWN slot=(1,4)DOWN len=17 pattern=O.POC.MAI.J.A.POP
+DEFCHK (8,3) dir=DOWN slot=(8,4)DOWN len=10 pattern=A.EID.FIT.
+DEFCHK (8,3) dir=RIGHT_DOWN slot=(8,4)RIGHT len=4 pattern=ATES
+DEFCHK (11,3) dir=DOWN slot=(11,4)DOWN len=7 pattern=S.N.T..
+DEFCHK (0,4) dir=RIGHT_DOWN slot=(0,5)RIGHT len=13 pattern=...RUN....N.H
+DEFCHK (5,4) dir=RIGHT_DOWN slot=(5,5)RIGHT len=8 pattern=N....N.H
+DEFCHK (6,4) dir=DOWN slot=(6,5)DOWN len=5 pattern=.CFO.
+DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 pattern=....N.H
+DEFCHK (3,7) dir=DOWN slot=(3,8)DOWN len=13 pattern=R.NIF.G.I.ESK
+DEFCHK (5,7) dir=DOWN slot=(5,8)DOWN len=13 pattern=C.UEU.I.N.EAN
+DEFCHK (9,7) dir=RIGHT slot=(10,7)RIGHT len=3 pattern=C.V
+DEFCHK (9,7) dir=DOWN slot=(9,8)DOWN len=4 pattern=E.PC
+DEFCHK (0,8) dir=RIGHT_DOWN slot=(0,9)RIGHT len=13 pattern=............S
+DEFCHK (4,8) dir=DOWN slot=(4,9)DOWN len=12 pattern=.ONL.G.O.TTI
+DEFCHK (4,8) dir=RIGHT_DOWN slot=(4,9)RIGHT len=9 pattern=........S
+DEFCHK (10,8) dir=RIGHT_DOWN slot=(10,9)RIGHT len=3 pattern=..S
+DEFCHK (6,10) dir=DOWN slot=(6,11)DOWN len=9 pattern=SE.N.S.NC
+DEFCHK (7,11) dir=RIGHT_DOWN slot=(7,12)RIGHT len=2 pattern=NT
+DEFCHK (11,11) dir=RIGHT_DOWN slot=(11,12)RIGHT len=2 pattern=LA
+DEFCHK (0,12) dir=RIGHT_DOWN slot=(0,13)RIGHT len=13 pattern=.......A..HON
+DEFCHK (9,12) dir=RIGHT slot=(10,12)RIGHT len=3 pattern=NLA
+DEFCHK (9,12) dir=DOWN slot=(9,13)DOWN len=6 pattern=.G...M
+DEFCHK (9,12) dir=RIGHT_DOWN slot=(9,13)RIGHT len=4 pattern=.HON
+DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=13 pattern=.......YS.MED
+DEFCHK (8,14) dir=RIGHT_DOWN slot=(8,15)RIGHT len=5 pattern=S.MED
+DEFCHK (0,16) dir=RIGHT_DOWN slot=(0,17)RIGHT len=13 pattern=........U.NSO
+DEFCHK (7,16) dir=RIGHT slot=(8,16)RIGHT len=5 pattern=O.ARR
+DEFCHK (7,16) dir=DOWN slot=(7,17)DOWN len=4 pattern=.DHE
+DEFCHK (7,16) dir=RIGHT_DOWN slot=(7,17)RIGHT len=6 pattern=.U.NSO
+DEFCHK (8,18) dir=DOWN slot=(8,19)DOWN len=2 pattern=EN
+DEFCHK (11,18) dir=RIGHT_DOWN slot=(11,19)RIGHT len=2 pattern=TO
+DEFCHK (9,19) dir=RIGHT slot=(10,19)RIGHT len=3 pattern=TTO
+DEFCHK (9,20) dir=RIGHT slot=(10,20)RIGHT len=3 pattern=EET
+REPAIR start pass=1
+REPAIR DEFCHK (0,8) dir=RIGHT_DOWN slot=(0,9)RIGHT len=13 empties=12 pattern=............S
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (0,8) dir=RIGHT_DOWN
+REPAIR DEFCHK (0,12) dir=RIGHT_DOWN slot=(0,13)RIGHT len=13 empties=9 pattern=.......A..HON
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (0,12) dir=RIGHT_DOWN
+REPAIR TRY replace old=DAN @ (12,11)DOWN len=3 locked=... because DEF (0,12) dir=RIGHT_DOWN
+REPAIR TRY replace old=NAGY @ (7,12)DOWN len=4 locked=N.G. because DEF (0,12) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (0,12) dir=RIGHT_DOWN
+REPAIR DEFCHK (0,16) dir=RIGHT_DOWN slot=(0,17)RIGHT len=13 empties=9 pattern=........U.NSO
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (0,16) dir=RIGHT_DOWN
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (0,16) dir=RIGHT_DOWN
+REPAIR TRY replace old=DROUOT @ (12,15)DOWN len=6 locked=...... because DEF (0,16) dir=RIGHT_DOWN
+REPAIR TRY replace old=SOU @ (8,15)DOWN len=3 locked=... because DEF (0,16) dir=RIGHT_DOWN
+REPAIR DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=13 empties=8 pattern=.......YS.MED
+REPAIR TRY replace old=SOU @ (8,15)DOWN len=3 locked=... because DEF (0,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (0,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=NAGY @ (7,12)DOWN len=4 locked=N.G. because DEF (0,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (0,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=DROUOT @ (12,15)DOWN len=6 locked=...... because DEF (0,14) dir=RIGHT_DOWN
+REPAIR DEFCHK (0,4) dir=RIGHT_DOWN slot=(0,5)RIGHT len=13 empties=8 pattern=...RUN....N.H
+REPAIR TRY replace old=HIRSUTE @ (4,1)DOWN len=7 locked=..RS.T. because DEF (0,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (0,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=GERS @ (3,3)DOWN len=4 locked=GE.S because DEF (0,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (0,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=NI @ (5,5)DOWN len=2 locked=.I because DEF (0,4) dir=RIGHT_DOWN
+REPAIR DEFCHK (4,8) dir=RIGHT_DOWN slot=(4,9)RIGHT len=9 empties=8 pattern=........S
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (4,8) dir=RIGHT_DOWN
+REPAIR DEFCHK (2,1) dir=DOWN slot=(2,2)DOWN len=19 empties=5 pattern=EAR.ASA.IRN.O.V.RUE
+REPAIR direct: no candidates
+REPAIR TRY replace old=INFLUENT @ (1,12)RIGHT len=8 locked=......N. because DEF (2,1) dir=DOWN
+REPAIR TRY replace old=CE @ (1,2)RIGHT len=2 locked=C. because DEF (2,1) dir=DOWN
+REPAIR TRY replace old=PEKIN @ (1,20)RIGHT len=5 locked=..... because DEF (2,1) dir=DOWN
+REPAIR TRY replace old=CAR @ (1,8)RIGHT len=3 locked=... because DEF (2,1) dir=DOWN
+REPAIR TRY replace old=MARINES @ (0,11)RIGHT len=7 locked=....... because DEF (2,1) dir=DOWN
+REPAIR DEFCHK (1,3) dir=DOWN slot=(1,4)DOWN len=17 empties=5 pattern=O.POC.MAI.J.A.POP
+REPAIR TRY replace old=PRETEND @ (1,18)RIGHT len=7 locked=....... because DEF (1,3) dir=DOWN
+REPAIR TRY replace old=AVIONS @ (1,16)RIGHT len=6 locked=...... because DEF (1,3) dir=DOWN
+REPAIR TRY replace old=MINOU @ (1,10)RIGHT len=5 locked=..... because DEF (1,3) dir=DOWN
+REPAIR TRY replace old=PASTICHE @ (1,6)RIGHT len=8 locked=..STI... because DEF (1,3) dir=DOWN
+REPAIR TRY replace old=DOS @ (0,7)RIGHT len=3 locked=... because DEF (1,3) dir=DOWN
+REPAIR DEFCHK (5,4) dir=RIGHT_DOWN slot=(5,5)RIGHT len=8 empties=5 pattern=N....N.H
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (5,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=NI @ (5,5)DOWN len=2 locked=.I because DEF (5,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (5,4) dir=RIGHT_DOWN
+REPAIR DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 empties=5 pattern=....N.H
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (6,4) dir=RIGHT_DOWN
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (6,4) dir=RIGHT_DOWN
+REPAIR DEFCHK (3,7) dir=DOWN slot=(3,8)DOWN len=13 empties=4 pattern=R.NIF.G.I.ESK
+REPAIR TRY replace old=PEKIN @ (1,20)RIGHT len=5 locked=..... because DEF (3,7) dir=DOWN
+REPAIR TRY replace old=INFLUENT @ (1,12)RIGHT len=8 locked=......N. because DEF (3,7) dir=DOWN
+REPAIR TRY replace old=AVIONS @ (1,16)RIGHT len=6 locked=...... because DEF (3,7) dir=DOWN
+REPAIR TRY replace old=CAR @ (1,8)RIGHT len=3 locked=... because DEF (3,7) dir=DOWN
+REPAIR TRY replace old=MARINES @ (0,11)RIGHT len=7 locked=....... because DEF (3,7) dir=DOWN
+REPAIR DEFCHK (5,7) dir=DOWN slot=(5,8)DOWN len=13 empties=4 pattern=C.UEU.I.N.EAN
+REPAIR TRY replace old=JOGGING @ (1,14)RIGHT len=7 locked=......G because DEF (5,7) dir=DOWN
+REPAIR TRY replace old=MINOU @ (1,10)RIGHT len=5 locked=..... because DEF (5,7) dir=DOWN
+REPAIR TRY replace old=CORDE @ (5,8)RIGHT len=5 locked=..... because DEF (5,7) dir=DOWN
+REPAIR TRY replace old=AVIONS @ (1,16)RIGHT len=6 locked=...... because DEF (5,7) dir=DOWN
+REPAIR TRY replace old=MOUSTACHE @ (0,19)RIGHT len=9 locked=......... because DEF (5,7) dir=DOWN
+REPAIR DEFCHK (4,8) dir=DOWN slot=(4,9)DOWN len=12 empties=4 pattern=.ONL.G.O.TTI
+REPAIR TRY replace old=MINOU @ (1,10)RIGHT len=5 locked=..... because DEF (4,8) dir=DOWN
+REPAIR TRY replace old=INFLUENT @ (1,12)RIGHT len=8 locked=......N. because DEF (4,8) dir=DOWN
+REPAIR TRY replace old=JOGGING @ (1,14)RIGHT len=7 locked=......G because DEF (4,8) dir=DOWN
+REPAIR TRY replace old=MOUSTACHE @ (0,19)RIGHT len=9 locked=......... because DEF (4,8) dir=DOWN
+REPAIR TRY replace old=AVIONS @ (1,16)RIGHT len=6 locked=...... because DEF (4,8) dir=DOWN
+REPAIR DEFCHK (11,3) dir=DOWN slot=(11,4)DOWN len=7 empties=4 pattern=S.N.T..
+REPAIR TRY replace old=PATES @ (7,4)RIGHT len=5 locked=...E. because DEF (11,3) dir=DOWN
+REPAIR TRY replace old=TA @ (11,8)RIGHT len=2 locked=.A because DEF (11,3) dir=DOWN
+REPAIR TRY replace old=INA @ (10,6)RIGHT len=3 locked=I.A because DEF (11,3) dir=DOWN
+REPAIR DEFCHK (9,12) dir=DOWN slot=(9,13)DOWN len=6 empties=4 pattern=.G...M
+REPAIR TRY replace old=GUY @ (9,14)RIGHT len=3 locked=.UY because DEF (9,12) dir=DOWN
+REPAIR TRY replace old=MI @ (9,18)RIGHT len=2 locked=.I because DEF (9,12) dir=DOWN
+REPAIR DEFCHK (8,3) dir=DOWN slot=(8,4)DOWN len=10 empties=3 pattern=A.EID.FIT.
+REPAIR TRY replace old=INFLUENT @ (1,12)RIGHT len=8 locked=......N. because DEF (8,3) dir=DOWN
+REPAIR TRY replace old=PASTICHE @ (1,6)RIGHT len=8 locked=..STI... because DEF (8,3) dir=DOWN
+REPAIR TRY replace old=AFP @ (7,10)RIGHT len=3 locked=... because DEF (8,3) dir=DOWN
+REPAIR TRY replace old=ICI @ (8,11)RIGHT len=3 locked=..I because DEF (8,3) dir=DOWN
+REPAIR TRY replace old=PATES @ (7,4)RIGHT len=5 locked=...E. because DEF (8,3) dir=DOWN
+REPAIR DEFCHK (6,10) dir=DOWN slot=(6,11)DOWN len=9 empties=3 pattern=SE.N.S.NC
+REPAIR TRY replace old=MOUSTACHE @ (0,19)RIGHT len=9 locked=......... because DEF (6,10) dir=DOWN
+REPAIR TRY replace old=JOGGING @ (1,14)RIGHT len=7 locked=......G because DEF (6,10) dir=DOWN
+REPAIR TRY replace old=INFLUENT @ (1,12)RIGHT len=8 locked=......N. because DEF (6,10) dir=DOWN
+REPAIR TRY replace old=MARINES @ (0,11)RIGHT len=7 locked=....... because DEF (6,10) dir=DOWN
+REPAIR TRY replace old=AVIONS @ (1,16)RIGHT len=6 locked=...... because DEF (6,10) dir=DOWN
+REPAIR DEFCHK (2,1) dir=RIGHT slot=(3,1)RIGHT len=10 empties=2 pattern=CHOI.O.AOU
+REPAIR TRY replace old=OU @ (8,1)DOWN len=2 locked=.. because DEF (2,1) dir=RIGHT
+REPAIR TRY replace old=HIRSUTE @ (4,1)DOWN len=7 locked=..RS.T. because DEF (2,1) dir=RIGHT
+REPAIR TRY replace old=ROBE @ (5,0)DOWN len=4 locked=...E because DEF (2,1) dir=RIGHT
+REPAIR TRY replace old=OC @ (3,0)DOWN len=2 locked=.. because DEF (2,1) dir=RIGHT
+REPAIR TRY replace old=IRE @ (6,1)DOWN len=3 locked=..E because DEF (2,1) dir=RIGHT
+REPAIR DEFCHK (4,0) dir=RIGHT_DOWN slot=(4,1)RIGHT len=9 empties=2 pattern=HOI.O.AOU
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (4,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=IRE @ (6,1)DOWN len=3 locked=..E because DEF (4,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=HIRSUTE @ (4,1)DOWN len=7 locked=..RS.T. because DEF (4,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=OU @ (8,1)DOWN len=2 locked=.. because DEF (4,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=ROBE @ (5,0)DOWN len=4 locked=...E because DEF (4,0) dir=RIGHT_DOWN
+REPAIR DEFCHK (3,2) dir=RIGHT slot=(4,2)RIGHT len=9 empties=2 pattern=IBR.U.RTN
+REPAIR direct: no candidates
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (3,2) dir=RIGHT
+REPAIR TRY replace old=LOT @ (11,0)DOWN len=3 locked=... because DEF (3,2) dir=RIGHT
+REPAIR TRY replace old=UNE @ (12,1)DOWN len=3 locked=... because DEF (3,2) dir=RIGHT
+REPAIR TRY replace old=IRE @ (6,1)DOWN len=3 locked=..E because DEF (3,2) dir=RIGHT
+REPAIR TRY replace old=HIRSUTE @ (4,1)DOWN len=7 locked=..RS.T. because DEF (3,2) dir=RIGHT
+REPAIR DEFCHK (6,0) dir=RIGHT_DOWN slot=(6,1)RIGHT len=7 empties=2 pattern=I.O.AOU
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (6,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=OU @ (8,1)DOWN len=2 locked=.. because DEF (6,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=IRE @ (6,1)DOWN len=3 locked=..E because DEF (6,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=UNE @ (12,1)DOWN len=3 locked=... because DEF (6,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOT @ (11,0)DOWN len=3 locked=... because DEF (6,0) dir=RIGHT_DOWN
+REPAIR DEFCHK (7,16) dir=RIGHT_DOWN slot=(7,17)RIGHT len=6 empties=2 pattern=.U.NSO
+REPAIR TRY replace old=SOU @ (8,15)DOWN len=3 locked=... because DEF (7,16) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (7,16) dir=RIGHT_DOWN
+REPAIR TRY replace old=DROUOT @ (12,15)DOWN len=6 locked=...... because DEF (7,16) dir=RIGHT_DOWN
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (7,16) dir=RIGHT_DOWN
+REPAIR DEFCHK (6,4) dir=DOWN slot=(6,5)DOWN len=5 empties=2 pattern=.CFO.
+REPAIR direct: no candidates
+REPAIR TRY replace old=PASTICHE @ (1,6)RIGHT len=8 locked=..STI... because DEF (6,4) dir=DOWN
+REPAIR TRY replace old=CORDE @ (5,8)RIGHT len=5 locked=..... because DEF (6,4) dir=DOWN
+REPAIR TRY replace old=FUI @ (6,7)RIGHT len=3 locked=... because DEF (6,4) dir=DOWN
+REPAIR DEFCHK (10,8) dir=RIGHT_DOWN slot=(10,9)RIGHT len=3 empties=2 pattern=..S
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (10,8) dir=RIGHT_DOWN
+REPAIR DEFCHK (8,14) dir=RIGHT_DOWN slot=(8,15)RIGHT len=5 empties=1 pattern=S.MED
+REPAIR TRY replace old=SOU @ (8,15)DOWN len=3 locked=... because DEF (8,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=DROUOT @ (12,15)DOWN len=6 locked=...... because DEF (8,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (8,14) dir=RIGHT_DOWN
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (8,14) dir=RIGHT_DOWN
+REPAIR DEFCHK (7,16) dir=RIGHT slot=(8,16)RIGHT len=5 empties=1 pattern=O.ARR
+REPAIR TRY replace old=DROUOT @ (12,15)DOWN len=6 locked=...... because DEF (7,16) dir=RIGHT
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (7,16) dir=RIGHT
+REPAIR TRY replace old=SOU @ (8,15)DOWN len=3 locked=... because DEF (7,16) dir=RIGHT
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (7,16) dir=RIGHT
+REPAIR DEFCHK (8,0) dir=RIGHT_DOWN slot=(8,1)RIGHT len=5 empties=1 pattern=O.AOU
+REPAIR TRY replace old=OU @ (8,1)DOWN len=2 locked=.. because DEF (8,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (8,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=UNE @ (12,1)DOWN len=3 locked=... because DEF (8,0) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOT @ (11,0)DOWN len=3 locked=... because DEF (8,0) dir=RIGHT_DOWN
+REPAIR DEFCHK (7,16) dir=DOWN slot=(7,17)DOWN len=4 empties=1 pattern=.DHE
+REPAIR TRY replace old=MOUSTACHE @ (0,19)RIGHT len=9 locked=......... because DEF (7,16) dir=DOWN
+REPAIR TRY replace old=PRETEND @ (1,18)RIGHT len=7 locked=....... because DEF (7,16) dir=DOWN
+REPAIR TRY replace old=EN @ (7,20)RIGHT len=2 locked=.. because DEF (7,16) dir=DOWN
+REPAIR DEFCHK (9,12) dir=RIGHT_DOWN slot=(9,13)RIGHT len=4 empties=1 pattern=.HON
+REPAIR TRY replace old=DAN @ (12,11)DOWN len=3 locked=... because DEF (9,12) dir=RIGHT_DOWN
+REPAIR TRY replace old=INHUMANITE @ (10,11)DOWN len=10 locked=I..U...I.. because DEF (9,12) dir=RIGHT_DOWN
+REPAIR TRY replace old=LOYERS @ (11,12)DOWN len=6 locked=..Y... because DEF (9,12) dir=RIGHT_DOWN
+REPAIR DEFCHK (9,7) dir=DOWN slot=(9,8)DOWN len=4 empties=1 pattern=E.PC
+REPAIR TRY replace old=CORDE @ (5,8)RIGHT len=5 locked=..... because DEF (9,7) dir=DOWN
+REPAIR TRY replace old=ICI @ (8,11)RIGHT len=3 locked=..I because DEF (9,7) dir=DOWN
+REPAIR TRY replace old=AFP @ (7,10)RIGHT len=3 locked=... because DEF (9,7) dir=DOWN
+REPAIR DEFCHK (9,7) dir=RIGHT slot=(10,7)RIGHT len=3 empties=1 pattern=C.V
+REPAIR TRY replace old=HAVAS @ (12,5)DOWN len=5 locked=.A.A. because DEF (9,7) dir=RIGHT
+REPAIR TRY replace old=ARSENIC @ (10,1)DOWN len=7 locked=..SE.I. because DEF (9,7) dir=RIGHT
+REPAIR done pass=1 placed=0 replaced=0
 DEF-FILL pass=1
-DEFCHK (0,0) dir=RIGHT_DOWN slot=(0,1)RIGHT len=13 pattern=..O.EU..AU..V
-DEFCHK (2,0) dir=RIGHT_DOWN slot=(2,1)RIGHT len=11 pattern=O.EU..AU..V
-DEFCHK (4,0) dir=RIGHT_DOWN slot=(4,1)RIGHT len=9 pattern=EU..AU..V
-[003] fill EU RIGHT @ (4,1) len=9 pattern=EU..AU..V +DEF (6,1)
-DEFCHK (4,0) dir=DOWN slot=(4,1)DOWN len=4 pattern=ETAI
-DEFCHK (8,0) dir=RIGHT_DOWN slot=(8,1)RIGHT len=5 pattern=AU..V
-[004] fill AU RIGHT @ (8,1) len=5 pattern=AU..V +DEF (10,1)
-DEFCHK (12,0) dir=DOWN slot=(12,1)DOWN len=6 pattern=VRAIES
-DEFCHK (6,1) dir=RIGHT slot=(7,1)RIGHT len=3 pattern=.AU
-DEFCHK (10,1) dir=RIGHT slot=(11,1)RIGHT len=2 pattern=.V
-DEFCHK (0,2) dir=RIGHT slot=(1,2)RIGHT len=5 pattern=FUITE
-DEFCHK (0,2) dir=RIGHT_DOWN slot=(0,3)RIGHT len=5 pattern=..R.A
-DEFCHK (6,2) dir=RIGHT slot=(7,2)RIGHT len=3 pattern=DST
-DEFCHK (6,2) dir=RIGHT_DOWN slot=(6,3)RIGHT len=3 pattern=NOS
-DEFCHK (10,2) dir=RIGHT slot=(11,2)RIGHT len=2 pattern=OR
-DEFCHK (10,2) dir=DOWN slot=(10,3)DOWN len=3 pattern=UTA
-DEFCHK (10,2) dir=RIGHT_DOWN slot=(10,3)RIGHT len=3 pattern=USA
-DEFCHK (5,3) dir=RIGHT slot=(6,3)RIGHT len=3 pattern=NOS
-DEFCHK (5,3) dir=DOWN slot=(5,4)DOWN len=12 pattern=N.E.NEE.R.D.
-DEFCHK (9,3) dir=RIGHT slot=(10,3)RIGHT len=3 pattern=USA
-DEFCHK (9,3) dir=DOWN slot=(9,4)DOWN len=12 pattern=S.U..PO.S.E.
-DEFCHK (9,3) dir=RIGHT_DOWN slot=(9,4)RIGHT len=2 pattern=ST
-DEFCHK (0,4) dir=RIGHT slot=(1,4)RIGHT len=5 pattern=ALPIN
-DEFCHK (0,4) dir=RIGHT_DOWN slot=(0,5)RIGHT len=3 pattern=USE
-DEFCHK (6,4) dir=RIGHT slot=(7,4)RIGHT len=4 pattern=WEST
-DEFCHK (6,4) dir=DOWN slot=(6,5)DOWN len=4 pattern=ORGE
-DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 pattern=O.R.ARE
-DEFCHK (11,4) dir=DOWN slot=(11,5)DOWN len=2 pattern=RU
-DEFCHK (11,4) dir=RIGHT_DOWN slot=(11,5)RIGHT len=2 pattern=RE
-DEFCHK (3,5) dir=DOWN slot=(3,6)DOWN len=3 pattern=U.R
-DEFCHK (3,5) dir=RIGHT_DOWN slot=(3,6)RIGHT len=4 pattern=USER
-DEFCHK (4,5) dir=RIGHT slot=(5,5)RIGHT len=8 pattern=.O.R.ARE
-DEFCHK (4,5) dir=DOWN slot=(4,6)DOWN len=5 pattern=SAINT
-DEFCHK (4,5) dir=RIGHT_DOWN slot=(4,6)RIGHT len=3 pattern=SER
-DEFCHK (0,6) dir=RIGHT_DOWN slot=(0,7)RIGHT len=11 pattern=..G.A.G.I.E
-DEFCHK (2,6) dir=RIGHT slot=(3,6)RIGHT len=4 pattern=USER
-DEFCHK (2,6) dir=DOWN slot=(2,7)DOWN len=6 pattern=GATEAU
-DEFCHK (2,6) dir=RIGHT_DOWN slot=(2,7)RIGHT len=9 pattern=G.A.G.I.E
-DEFCHK (7,6) dir=RIGHT slot=(8,6)RIGHT len=2 pattern=TU
-DEFCHK (7,6) dir=RIGHT_DOWN slot=(7,7)RIGHT len=4 pattern=.I.E
-DEFCHK (10,6) dir=RIGHT slot=(11,6)RIGHT len=2 pattern=US
-DEFCHK (10,6) dir=DOWN slot=(10,7)DOWN len=2 pattern=EU
-DEFCHK (11,7) dir=DOWN slot=(11,8)DOWN len=2 pattern=.A
-DEFCHK (11,7) dir=RIGHT_DOWN slot=(11,8)RIGHT len=2 pattern=.J
-DEFCHK (12,7) dir=DOWN slot=(12,8)DOWN len=4 pattern=JUAN
-DEFCHK (0,8) dir=RIGHT slot=(1,8)RIGHT len=6 pattern=MARINE
-DEFCHK (0,8) dir=RIGHT_DOWN slot=(0,9)RIGHT len=3 pattern=BIT
-DEFCHK (7,8) dir=RIGHT slot=(8,8)RIGHT len=5 pattern=V.U.J
-DEFCHK (7,8) dir=RIGHT_DOWN slot=(7,9)RIGHT len=3 pattern=ZIP
-DEFCHK (3,9) dir=RIGHT slot=(4,9)RIGHT len=2 pattern=NE
-DEFCHK (3,9) dir=DOWN slot=(3,10)DOWN len=7 pattern=N.M.O.G
-DEFCHK (3,9) dir=RIGHT_DOWN slot=(3,10)RIGHT len=4 pattern=NTEE
-DEFCHK (6,9) dir=RIGHT slot=(7,9)RIGHT len=3 pattern=ZIP
-DEFCHK (6,9) dir=DOWN slot=(6,10)DOWN len=4 pattern=E.O.
-DEFCHK (10,9) dir=RIGHT slot=(11,9)RIGHT len=2 pattern=AU
-DEFCHK (10,9) dir=DOWN slot=(10,10)DOWN len=9 pattern=M.K.R.SI.
-DEFCHK (0,10) dir=RIGHT slot=(1,10)RIGHT len=6 pattern=TENTEE
-DEFCHK (0,10) dir=RIGHT_DOWN slot=(0,11)RIGHT len=4 pattern=..A.
-DEFCHK (7,10) dir=RIGHT slot=(8,10)RIGHT len=3 pattern=TOM
-DEFCHK (7,10) dir=RIGHT_DOWN slot=(7,11)RIGHT len=6 pattern=.E..AN
-DEFCHK (11,10) dir=DOWN slot=(11,11)DOWN len=3 pattern=AI.
-DEFCHK (11,10) dir=RIGHT_DOWN slot=(11,11)RIGHT len=2 pattern=AN
-DEFCHK (4,11) dir=RIGHT slot=(5,11)RIGHT len=8 pattern=...E..AN
-DEFCHK (4,11) dir=DOWN slot=(4,12)DOWN len=3 pattern=EPI
-DEFCHK (4,11) dir=RIGHT_DOWN slot=(4,12)RIGHT len=3 pattern=ERO
-DEFCHK (0,12) dir=RIGHT slot=(1,12)RIGHT len=6 pattern=NUMERO
-DEFCHK (0,12) dir=RIGHT_DOWN slot=(0,13)RIGHT len=2 pattern=RE
-DEFCHK (7,12) dir=DOWN slot=(7,13)DOWN len=6 pattern=RONGER
-DEFCHK (7,12) dir=RIGHT_DOWN slot=(7,13)RIGHT len=6 pattern=R....O
-DEFCHK (8,12) dir=RIGHT slot=(9,12)RIGHT len=3 pattern=SKI
-DEFCHK (8,12) dir=DOWN slot=(8,13)DOWN len=4 pattern=.S.E
-DEFCHK (8,12) dir=RIGHT_DOWN slot=(8,13)RIGHT len=5 pattern=....O
-DEFCHK (12,12) dir=DOWN slot=(12,13)DOWN len=3 pattern=OSE
-DEFCHK (2,13) dir=RIGHT slot=(3,13)RIGHT len=10 pattern=.P..R....O
-DEFCHK (2,13) dir=DOWN slot=(2,14)DOWN len=4 pattern=RAIL
-DEFCHK (2,13) dir=RIGHT_DOWN slot=(2,14)RIGHT len=4 pattern=ROID
-DEFCHK (0,14) dir=RIGHT slot=(1,14)RIGHT len=5 pattern=FROID
-DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=4 pattern=..A.
-DEFCHK (6,14) dir=RIGHT slot=(7,14)RIGHT len=4 pattern=OSER
-DEFCHK (6,14) dir=DOWN slot=(6,15)DOWN len=6 pattern=.AI.AH
-DEFCHK (6,14) dir=RIGHT_DOWN slot=(6,15)RIGHT len=7 pattern=.N...LE
-DEFCHK (11,14) dir=DOWN slot=(11,15)DOWN len=2 pattern=LU
-DEFCHK (11,14) dir=RIGHT_DOWN slot=(11,15)RIGHT len=2 pattern=LE
-DEFCHK (4,15) dir=RIGHT slot=(5,15)RIGHT len=8 pattern=..N...LE
-DEFCHK (4,15) dir=DOWN slot=(4,16)DOWN len=3 pattern=US.
-[005] fill US DOWN @ (4,16) len=3 pattern=US. +DEF (4,18)
-DEFCHK (0,16) dir=RIGHT slot=(1,16)RIGHT len=4 pattern=AIGU
-DEFCHK (0,16) dir=RIGHT_DOWN slot=(0,17)RIGHT len=3 pattern=MIL
-DEFCHK (5,16) dir=RIGHT slot=(6,16)RIGHT len=3 pattern=AGE
-DEFCHK (5,16) dir=DOWN slot=(5,17)DOWN len=4 pattern=CUVE
-DEFCHK (5,16) dir=RIGHT_DOWN slot=(5,17)RIGHT len=3 pattern=CIE
-DEFCHK (9,16) dir=RIGHT slot=(10,16)RIGHT len=2 pattern=SU
-DEFCHK (9,16) dir=DOWN slot=(9,17)DOWN len=4 pattern=N.K.
-DEFCHK (9,16) dir=RIGHT_DOWN slot=(9,17)RIGHT len=2 pattern=NI
-DEFCHK (12,16) dir=DOWN slot=(12,17)DOWN len=4 pattern=DURE
-DEFCHK (3,17) dir=RIGHT slot=(4,17)RIGHT len=4 pattern=SCIE
-DEFCHK (3,17) dir=DOWN slot=(3,18)DOWN len=3 pattern=.DE
-DEFCHK (8,17) dir=RIGHT slot=(9,17)RIGHT len=2 pattern=NI
-DEFCHK (8,17) dir=DOWN slot=(8,18)DOWN len=3 pattern=.O.
-DEFCHK (8,17) dir=RIGHT_DOWN slot=(8,18)RIGHT len=5 pattern=...NU
-DEFCHK (11,17) dir=DOWN slot=(11,18)DOWN len=3 pattern=NON
-DEFCHK (11,17) dir=RIGHT_DOWN slot=(11,18)RIGHT len=2 pattern=NU
-DEFCHK (0,18) dir=RIGHT_DOWN slot=(0,19)RIGHT len=4 pattern=LORD
-DEFCHK (2,18) dir=DOWN slot=(2,19)DOWN len=2 pattern=RU
-DEFCHK (2,18) dir=RIGHT_DOWN slot=(2,19)RIGHT len=2 pattern=RD
-DEFCHK (4,18) dir=RIGHT slot=(5,18)RIGHT len=8 pattern=U.R...NU
-DEFCHK (4,19) dir=RIGHT slot=(5,19)RIGHT len=2 pattern=VA
-DEFCHK (7,19) dir=RIGHT slot=(8,19)RIGHT len=2 pattern=OK
-DEFCHK (10,19) dir=RIGHT slot=(11,19)RIGHT len=2 pattern=OR
-DEFCHK (10,19) dir=RIGHT_DOWN slot=(10,20)RIGHT len=3 pattern=.NE
-DEFCHK (0,20) dir=RIGHT slot=(1,20)RIGHT len=3 pattern=RUE
-DEFCHK (4,20) dir=RIGHT slot=(5,20)RIGHT len=2 pattern=EH
-DEFCHK (7,20) dir=RIGHT slot=(8,20)RIGHT len=5 pattern=...NE
-DEF-FILL pass=2
-DEFCHK (0,0) dir=RIGHT_DOWN slot=(0,1)RIGHT len=6 pattern=..O.EU
-DEFCHK (2,0) dir=RIGHT_DOWN slot=(2,1)RIGHT len=4 pattern=O.EU
-DEFCHK (4,0) dir=DOWN slot=(4,1)DOWN len=4 pattern=ETAI
-DEFCHK (12,0) dir=DOWN slot=(12,1)DOWN len=6 pattern=VRAIES
-DEFCHK (6,1) dir=RIGHT slot=(7,1)RIGHT len=3 pattern=.AU
-DEFCHK (10,1) dir=RIGHT slot=(11,1)RIGHT len=2 pattern=.V
-DEFCHK (0,2) dir=RIGHT slot=(1,2)RIGHT len=5 pattern=FUITE
-DEFCHK (0,2) dir=RIGHT_DOWN slot=(0,3)RIGHT len=5 pattern=..R.A
-DEFCHK (6,2) dir=RIGHT slot=(7,2)RIGHT len=3 pattern=DST
-DEFCHK (6,2) dir=RIGHT_DOWN slot=(6,3)RIGHT len=3 pattern=NOS
-DEFCHK (10,2) dir=RIGHT slot=(11,2)RIGHT len=2 pattern=OR
-DEFCHK (10,2) dir=DOWN slot=(10,3)DOWN len=3 pattern=UTA
-DEFCHK (10,2) dir=RIGHT_DOWN slot=(10,3)RIGHT len=3 pattern=USA
-DEFCHK (5,3) dir=RIGHT slot=(6,3)RIGHT len=3 pattern=NOS
-DEFCHK (5,3) dir=DOWN slot=(5,4)DOWN len=12 pattern=N.E.NEE.R.D.
-DEFCHK (9,3) dir=RIGHT slot=(10,3)RIGHT len=3 pattern=USA
-DEFCHK (9,3) dir=DOWN slot=(9,4)DOWN len=12 pattern=S.U..PO.S.E.
-DEFCHK (9,3) dir=RIGHT_DOWN slot=(9,4)RIGHT len=2 pattern=ST
-DEFCHK (0,4) dir=RIGHT slot=(1,4)RIGHT len=5 pattern=ALPIN
-DEFCHK (0,4) dir=RIGHT_DOWN slot=(0,5)RIGHT len=3 pattern=USE
-DEFCHK (6,4) dir=RIGHT slot=(7,4)RIGHT len=4 pattern=WEST
-DEFCHK (6,4) dir=DOWN slot=(6,5)DOWN len=4 pattern=ORGE
-DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 pattern=O.R.ARE
-DEFCHK (11,4) dir=DOWN slot=(11,5)DOWN len=2 pattern=RU
-DEFCHK (11,4) dir=RIGHT_DOWN slot=(11,5)RIGHT len=2 pattern=RE
-DEFCHK (3,5) dir=DOWN slot=(3,6)DOWN len=3 pattern=U.R
-DEFCHK (3,5) dir=RIGHT_DOWN slot=(3,6)RIGHT len=4 pattern=USER
-DEFCHK (4,5) dir=RIGHT slot=(5,5)RIGHT len=8 pattern=.O.R.ARE
-DEFCHK (4,5) dir=DOWN slot=(4,6)DOWN len=5 pattern=SAINT
-DEFCHK (4,5) dir=RIGHT_DOWN slot=(4,6)RIGHT len=3 pattern=SER
-DEFCHK (0,6) dir=RIGHT_DOWN slot=(0,7)RIGHT len=11 pattern=..G.A.G.I.E
-DEFCHK (2,6) dir=RIGHT slot=(3,6)RIGHT len=4 pattern=USER
-DEFCHK (2,6) dir=DOWN slot=(2,7)DOWN len=6 pattern=GATEAU
-DEFCHK (2,6) dir=RIGHT_DOWN slot=(2,7)RIGHT len=9 pattern=G.A.G.I.E
-DEFCHK (7,6) dir=RIGHT slot=(8,6)RIGHT len=2 pattern=TU
-DEFCHK (7,6) dir=RIGHT_DOWN slot=(7,7)RIGHT len=4 pattern=.I.E
-DEFCHK (10,6) dir=RIGHT slot=(11,6)RIGHT len=2 pattern=US
-DEFCHK (10,6) dir=DOWN slot=(10,7)DOWN len=2 pattern=EU
-DEFCHK (11,7) dir=DOWN slot=(11,8)DOWN len=2 pattern=.A
-DEFCHK (11,7) dir=RIGHT_DOWN slot=(11,8)RIGHT len=2 pattern=.J
-DEFCHK (12,7) dir=DOWN slot=(12,8)DOWN len=4 pattern=JUAN
-DEFCHK (0,8) dir=RIGHT slot=(1,8)RIGHT len=6 pattern=MARINE
-DEFCHK (0,8) dir=RIGHT_DOWN slot=(0,9)RIGHT len=3 pattern=BIT
-DEFCHK (7,8) dir=RIGHT slot=(8,8)RIGHT len=5 pattern=V.U.J
-DEFCHK (7,8) dir=RIGHT_DOWN slot=(7,9)RIGHT len=3 pattern=ZIP
-DEFCHK (3,9) dir=RIGHT slot=(4,9)RIGHT len=2 pattern=NE
-DEFCHK (3,9) dir=DOWN slot=(3,10)DOWN len=7 pattern=N.M.O.G
-DEFCHK (3,9) dir=RIGHT_DOWN slot=(3,10)RIGHT len=4 pattern=NTEE
-DEFCHK (6,9) dir=RIGHT slot=(7,9)RIGHT len=3 pattern=ZIP
-DEFCHK (6,9) dir=DOWN slot=(6,10)DOWN len=4 pattern=E.O.
-DEFCHK (10,9) dir=RIGHT slot=(11,9)RIGHT len=2 pattern=AU
-DEFCHK (10,9) dir=DOWN slot=(10,10)DOWN len=9 pattern=M.K.R.SI.
-DEFCHK (0,10) dir=RIGHT slot=(1,10)RIGHT len=6 pattern=TENTEE
-DEFCHK (0,10) dir=RIGHT_DOWN slot=(0,11)RIGHT len=4 pattern=..A.
-DEFCHK (7,10) dir=RIGHT slot=(8,10)RIGHT len=3 pattern=TOM
-DEFCHK (7,10) dir=RIGHT_DOWN slot=(7,11)RIGHT len=6 pattern=.E..AN
-DEFCHK (11,10) dir=DOWN slot=(11,11)DOWN len=3 pattern=AI.
-DEFCHK (11,10) dir=RIGHT_DOWN slot=(11,11)RIGHT len=2 pattern=AN
-DEFCHK (4,11) dir=RIGHT slot=(5,11)RIGHT len=8 pattern=...E..AN
-DEFCHK (4,11) dir=DOWN slot=(4,12)DOWN len=3 pattern=EPI
-DEFCHK (4,11) dir=RIGHT_DOWN slot=(4,12)RIGHT len=3 pattern=ERO
-DEFCHK (0,12) dir=RIGHT slot=(1,12)RIGHT len=6 pattern=NUMERO
-DEFCHK (0,12) dir=RIGHT_DOWN slot=(0,13)RIGHT len=2 pattern=RE
-DEFCHK (7,12) dir=DOWN slot=(7,13)DOWN len=6 pattern=RONGER
-DEFCHK (7,12) dir=RIGHT_DOWN slot=(7,13)RIGHT len=6 pattern=R....O
-DEFCHK (8,12) dir=RIGHT slot=(9,12)RIGHT len=3 pattern=SKI
-DEFCHK (8,12) dir=DOWN slot=(8,13)DOWN len=4 pattern=.S.E
-DEFCHK (8,12) dir=RIGHT_DOWN slot=(8,13)RIGHT len=5 pattern=....O
-DEFCHK (12,12) dir=DOWN slot=(12,13)DOWN len=3 pattern=OSE
-DEFCHK (2,13) dir=RIGHT slot=(3,13)RIGHT len=10 pattern=.P..R....O
-DEFCHK (2,13) dir=DOWN slot=(2,14)DOWN len=4 pattern=RAIL
-DEFCHK (2,13) dir=RIGHT_DOWN slot=(2,14)RIGHT len=4 pattern=ROID
-DEFCHK (0,14) dir=RIGHT slot=(1,14)RIGHT len=5 pattern=FROID
-DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=4 pattern=..A.
-DEFCHK (6,14) dir=RIGHT slot=(7,14)RIGHT len=4 pattern=OSER
-DEFCHK (6,14) dir=DOWN slot=(6,15)DOWN len=6 pattern=.AI.AH
-DEFCHK (6,14) dir=RIGHT_DOWN slot=(6,15)RIGHT len=7 pattern=.N...LE
-DEFCHK (11,14) dir=DOWN slot=(11,15)DOWN len=2 pattern=LU
-DEFCHK (11,14) dir=RIGHT_DOWN slot=(11,15)RIGHT len=2 pattern=LE
-DEFCHK (4,15) dir=RIGHT slot=(5,15)RIGHT len=8 pattern=..N...LE
-DEFCHK (0,16) dir=RIGHT slot=(1,16)RIGHT len=4 pattern=AIGU
-DEFCHK (0,16) dir=RIGHT_DOWN slot=(0,17)RIGHT len=3 pattern=MIL
-DEFCHK (5,16) dir=RIGHT slot=(6,16)RIGHT len=3 pattern=AGE
-DEFCHK (5,16) dir=DOWN slot=(5,17)DOWN len=4 pattern=CUVE
-DEFCHK (5,16) dir=RIGHT_DOWN slot=(5,17)RIGHT len=3 pattern=CIE
-DEFCHK (9,16) dir=RIGHT slot=(10,16)RIGHT len=2 pattern=SU
-DEFCHK (9,16) dir=DOWN slot=(9,17)DOWN len=4 pattern=N.K.
-DEFCHK (9,16) dir=RIGHT_DOWN slot=(9,17)RIGHT len=2 pattern=NI
-DEFCHK (12,16) dir=DOWN slot=(12,17)DOWN len=4 pattern=DURE
-DEFCHK (3,17) dir=RIGHT slot=(4,17)RIGHT len=4 pattern=SCIE
-DEFCHK (3,17) dir=DOWN slot=(3,18)DOWN len=3 pattern=.DE
-DEFCHK (8,17) dir=RIGHT slot=(9,17)RIGHT len=2 pattern=NI
-DEFCHK (8,17) dir=DOWN slot=(8,18)DOWN len=3 pattern=.O.
-DEFCHK (8,17) dir=RIGHT_DOWN slot=(8,18)RIGHT len=5 pattern=...NU
-DEFCHK (11,17) dir=DOWN slot=(11,18)DOWN len=3 pattern=NON
-DEFCHK (11,17) dir=RIGHT_DOWN slot=(11,18)RIGHT len=2 pattern=NU
-DEFCHK (0,18) dir=RIGHT_DOWN slot=(0,19)RIGHT len=4 pattern=LORD
-DEFCHK (2,18) dir=DOWN slot=(2,19)DOWN len=2 pattern=RU
-DEFCHK (2,18) dir=RIGHT_DOWN slot=(2,19)RIGHT len=2 pattern=RD
-DEFCHK (4,18) dir=RIGHT slot=(5,18)RIGHT len=8 pattern=U.R...NU
-DEFCHK (4,19) dir=RIGHT slot=(5,19)RIGHT len=2 pattern=VA
-DEFCHK (7,19) dir=RIGHT slot=(8,19)RIGHT len=2 pattern=OK
-DEFCHK (10,19) dir=RIGHT slot=(11,19)RIGHT len=2 pattern=OR
-DEFCHK (10,19) dir=RIGHT_DOWN slot=(10,20)RIGHT len=3 pattern=.NE
-DEFCHK (0,20) dir=RIGHT slot=(1,20)RIGHT len=3 pattern=RUE
-DEFCHK (4,20) dir=RIGHT slot=(5,20)RIGHT len=2 pattern=EH
-DEFCHK (7,20) dir=RIGHT slot=(8,20)RIGHT len=5 pattern=...NE
-DEF-FILL placed=3
-DONE: placed=5 unplaced=3
+DEFCHK (4,0) dir=RIGHT_DOWN slot=(4,1)RIGHT len=9 pattern=HOI.O.AOU
+DEFCHK (6,0) dir=RIGHT_DOWN slot=(6,1)RIGHT len=7 pattern=I.O.AOU
+DEFCHK (8,0) dir=RIGHT_DOWN slot=(8,1)RIGHT len=5 pattern=O.AOU
+DEFCHK (10,0) dir=RIGHT_DOWN slot=(10,1)RIGHT len=3 pattern=AOU
+DEFCHK (2,1) dir=RIGHT slot=(3,1)RIGHT len=10 pattern=CHOI.O.AOU
+DEFCHK (2,1) dir=DOWN slot=(2,2)DOWN len=19 pattern=EAR.ASA.IRN.O.V.RUE
+DEFCHK (3,2) dir=RIGHT slot=(4,2)RIGHT len=9 pattern=IBR.U.RTN
+DEFCHK (3,2) dir=RIGHT_DOWN slot=(3,3)RIGHT len=5 pattern=GREER
+DEFCHK (1,3) dir=DOWN slot=(1,4)DOWN len=17 pattern=O.POC.MAI.J.A.POP
+DEFCHK (8,3) dir=DOWN slot=(8,4)DOWN len=10 pattern=A.EID.FIT.
+DEFCHK (8,3) dir=RIGHT_DOWN slot=(8,4)RIGHT len=4 pattern=ATES
+DEFCHK (11,3) dir=DOWN slot=(11,4)DOWN len=7 pattern=S.N.T..
+DEFCHK (0,4) dir=RIGHT_DOWN slot=(0,5)RIGHT len=13 pattern=...RUN....N.H
+DEFCHK (5,4) dir=RIGHT_DOWN slot=(5,5)RIGHT len=8 pattern=N....N.H
+DEFCHK (6,4) dir=DOWN slot=(6,5)DOWN len=5 pattern=.CFO.
+DEFCHK (6,4) dir=RIGHT_DOWN slot=(6,5)RIGHT len=7 pattern=....N.H
+DEFCHK (3,7) dir=DOWN slot=(3,8)DOWN len=13 pattern=R.NIF.G.I.ESK
+DEFCHK (5,7) dir=DOWN slot=(5,8)DOWN len=13 pattern=C.UEU.I.N.EAN
+DEFCHK (9,7) dir=RIGHT slot=(10,7)RIGHT len=3 pattern=C.V
+DEFCHK (9,7) dir=DOWN slot=(9,8)DOWN len=4 pattern=E.PC
+DEFCHK (0,8) dir=RIGHT_DOWN slot=(0,9)RIGHT len=13 pattern=............S
+DEFCHK (4,8) dir=DOWN slot=(4,9)DOWN len=12 pattern=.ONL.G.O.TTI
+DEFCHK (4,8) dir=RIGHT_DOWN slot=(4,9)RIGHT len=9 pattern=........S
+DEFCHK (10,8) dir=RIGHT_DOWN slot=(10,9)RIGHT len=3 pattern=..S
+DEFCHK (6,10) dir=DOWN slot=(6,11)DOWN len=9 pattern=SE.N.S.NC
+DEFCHK (7,11) dir=RIGHT_DOWN slot=(7,12)RIGHT len=2 pattern=NT
+DEFCHK (11,11) dir=RIGHT_DOWN slot=(11,12)RIGHT len=2 pattern=LA
+DEFCHK (0,12) dir=RIGHT_DOWN slot=(0,13)RIGHT len=13 pattern=.......A..HON
+DEFCHK (9,12) dir=RIGHT slot=(10,12)RIGHT len=3 pattern=NLA
+DEFCHK (9,12) dir=DOWN slot=(9,13)DOWN len=6 pattern=.G...M
+DEFCHK (9,12) dir=RIGHT_DOWN slot=(9,13)RIGHT len=4 pattern=.HON
+DEFCHK (0,14) dir=RIGHT_DOWN slot=(0,15)RIGHT len=13 pattern=.......YS.MED
+DEFCHK (8,14) dir=RIGHT_DOWN slot=(8,15)RIGHT len=5 pattern=S.MED
+DEFCHK (0,16) dir=RIGHT_DOWN slot=(0,17)RIGHT len=13 pattern=........U.NSO
+DEFCHK (7,16) dir=RIGHT slot=(8,16)RIGHT len=5 pattern=O.ARR
+DEFCHK (7,16) dir=DOWN slot=(7,17)DOWN len=4 pattern=.DHE
+DEFCHK (7,16) dir=RIGHT_DOWN slot=(7,17)RIGHT len=6 pattern=.U.NSO
+DEFCHK (8,18) dir=DOWN slot=(8,19)DOWN len=2 pattern=EN
+DEFCHK (11,18) dir=RIGHT_DOWN slot=(11,19)RIGHT len=2 pattern=TO
+DEFCHK (9,19) dir=RIGHT slot=(10,19)RIGHT len=3 pattern=TTO
+DEFCHK (9,20) dir=RIGHT slot=(10,20)RIGHT len=3 pattern=EET
+DONE: placed=45 unplaced=3
